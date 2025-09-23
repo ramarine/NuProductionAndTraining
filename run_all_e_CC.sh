@@ -14,11 +14,11 @@ LOG_SBATCH_OPTS="--account=def-nilic --time=0:05:00 --mem=1G --mail-user=robert.
 COMMON_SBATCH_OPTS="--account=def-nilic --time=12:30:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL --array=1-$NUM_FILES"
 DETSIM_SBATCH_OPTS="--account=def-nilic --time=12:30:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL --array=1-$NUM_FILES"
 
-job1=$(sbatch $COMMON_SBATCH_OPTS -J mu_gen_events --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_gen_events.sh $NUM_EVENTS $FCL_FILE_NAME "$DATA_DIR" | awk '{print $4}')
-job2=$(sbatch $COMMON_SBATCH_OPTS -J mu_g4 --dependency=afterok:$job1 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_g4.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
-job3=$(sbatch $DETSIM_SBATCH_OPTS -J mu_detsim --dependency=afterok:$job2 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_detsim.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
-job4=$(sbatch $COMMON_SBATCH_OPTS -J mu_reco --dependency=afterok:$job3 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_reco.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
-job5=$(sbatch $COMMON_SBATCH_OPTS -J mu_makehdf5 --dependency=afterok:$job4 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_makehdf5.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
+job1=$(sbatch $COMMON_SBATCH_OPTS -J e_gen_events --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_gen_events.sh $NUM_EVENTS $FCL_FILE_NAME "$DATA_DIR" | awk '{print $4}')
+job2=$(sbatch $COMMON_SBATCH_OPTS -J e_g4 --dependency=afterok:$job1 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_g4.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
+job3=$(sbatch $DETSIM_SBATCH_OPTS -J e_detsim --dependency=afterok:$job2 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_detsim.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
+job4=$(sbatch $COMMON_SBATCH_OPTS -J e_reco --dependency=afterok:$job3 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_reco.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
+job5=$(sbatch $COMMON_SBATCH_OPTS -J e_makehdf5 --dependency=afterok:$job4 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_makehdf5.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
 
 # Optional: Wait for final job to complete before querying
 # while squeue -j $job5 > /dev/null 2>&1; do sleep 10; done

@@ -11,8 +11,8 @@ FCL_FILE_NAME="prodgenie_atmnMuCC_max_weighted_dune10kt_1x2x6"
 mkdir -p "$DATA_DIR" "$LOG_DIR"
 
 LOG_SBATCH_OPTS="--account=def-nilic --time=0:05:00 --mem=1G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL"
-COMMON_SBATCH_OPTS="--account=def-nilic --time=12:00:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL --array=1-$NUM_FILES"
-DETSIM_SBATCH_OPTS="--account=def-nilic --time=12:00:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL --array=1-$NUM_FILES"
+COMMON_SBATCH_OPTS="--account=def-nilic --time=12:30:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL --array=1-$NUM_FILES"
+DETSIM_SBATCH_OPTS="--account=def-nilic --time=12:30:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL --array=1-$NUM_FILES"
 
 job1=$(sbatch $COMMON_SBATCH_OPTS -J mu_gen_events --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_gen_events.sh $NUM_EVENTS $FCL_FILE_NAME "$DATA_DIR" | awk '{print $4}')
 job2=$(sbatch $COMMON_SBATCH_OPTS -J mu_g4 --dependency=afterok:$job1 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_g4.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
