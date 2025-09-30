@@ -11,7 +11,7 @@ module load apptainer/1.1.8
 source /home/amarinei/Software/LArSoft_scripts/setup_LArSoft_area_cc.sh /home/amarinei/Software/LArSoft_v10_09_00d00
 
 # FILENAME=$1
-INFILE_DIR="/scratch/amarinei/data/Atmospherics/TauCC_10/hdf5"
+INFILE_DIR="/scratch/amarinei/data/Atmospherics/TauCC_250_1000/hdf5"
 OUT_NAME="10f_10e"
 FILENAME=${OUT_NAME}
 
