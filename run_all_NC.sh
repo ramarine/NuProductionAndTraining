@@ -2,9 +2,9 @@
 
 cd /scratch/amarinei/LArSoft_scripts
 #modify the following variables as needed
-NUM_EVENTS=10
-NUM_FILES=10
-MEMORY=6
+NUM_EVENTS=250
+NUM_FILES=1000
+MEMORY=32
 
 DATA_DIR="/scratch/amarinei/data/Atmospherics/NC_${NUM_EVENTS}_${NUM_FILES}"
 LOG_DIR="$DATA_DIR/logs"
@@ -14,15 +14,16 @@ FCL_FILE_NAME="prodgenie_atmnNC_max_weighted_dune10kt_1x2x6"
 mkdir -p "$DATA_DIR" "$LOG_DIR" "$GENERAL_LOG_DIR"
 
 #modify the time variables as needed
-LOG_SBATCH_OPTS="--account=def-nilic --time=0:30:00 --mem=1G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL"
-COMMON_SBATCH_OPTS="--account=def-nilic --time=1:30:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL --array=1-$NUM_FILES"
-DETSIM_SBATCH_OPTS="--account=def-nilic --time=1:30:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL --array=1-$NUM_FILES"
+LOG_SBATCH_OPTS="--account=def-nilic --time=1:30:00 --mem=1G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL"
+COMMON_SBATCH_OPTS="--account=def-nilic --time=22:30:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL --array=1-$NUM_FILES"
+DETSIM_SBATCH_OPTS="--account=def-nilic --time=22:30:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL --array=1-$NUM_FILES"
 
 # General log (start)
 echo "Run started at $(date)" >> "$GENERAL_LOG_DIR/general.log"
 echo "Working directory: $(pwd)" >> "$GENERAL_LOG_DIR/general.log"
 echo "Data directory: $DATA_DIR" >> "$GENERAL_LOG_DIR/general.log"
 echo "Log directory: $LOG_DIR" >> "$GENERAL_LOG_DIR/general.log"
+
 
 
 job1=$(sbatch $COMMON_SBATCH_OPTS -J NC_gen_events --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_gen_events.sh $NUM_EVENTS $FCL_FILE_NAME "$DATA_DIR" | awk '{print $4}')
@@ -33,6 +34,7 @@ job3_a=$(sbatch $LOG_SBATCH_OPTS -J NC_del_g4 --dependency=afterok:$job3 --outpu
 job4=$(sbatch $COMMON_SBATCH_OPTS -J NC_reco --dependency=afterok:$job3_a --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_reco.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
 job4_a=$(sbatch $LOG_SBATCH_OPTS -J NC_del_detsim --dependency=afterok:$job4 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err delete_detsim.sh "$DATA_DIR" | awk '{print $4}')
 job5=$(sbatch $COMMON_SBATCH_OPTS -J NC_makehdf5 --dependency=afterok:$job4_a --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_makehdf5.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
+
 
 
 
