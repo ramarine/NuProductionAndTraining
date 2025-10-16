@@ -529,4 +529,1068 @@ drwxr-x--- 3 amarinei amarinei 786432 Sep 27 07:13 [01;34mlogs[0m
 [?2004l]0;amarinei@login1:/scratch/amarinei/data/Atmospherics[?2004h[amarinei@login1 Atmospherics]$ ls -ltr
 [?2004ltotal 40
 drwxr-x--- 5 amarinei amarinei 4096 Sep 25 01:49 [0m[01;34mECC_1_10[0m
-drwxr-x--- 5 amarinei amarinei 4096 Sep 25 02:
+drwxr-x--- 5 amarinei amarinei 4096 Sep 25 02:11 [01;34mTauCC_1_10[0m
+drwxr-x--- 5 amarinei amarinei 4096 Sep 25 02:11 [01;34mMuCC_1_10[0m
+drwxr-x--- 5 amarinei amarinei 4096 Sep 26 22:58 [01;34mECC_250_1000[0m
+drwxr-x--- 5 amarinei amarinei 4096 Sep 27 05:25 [01;34mMuCC_250_1000[0m
+drwxr-x--- 7 amarinei amarinei 4096 Sep 30 01:17 [01;34mTauCC_250_1000[0m
+drwxr-x--- 8 amarinei amarinei 4096 Oct  3 04:54 [01;34mNC_1_5[0m
+drwxr-x--- 8 amarinei amarinei 4096 Oct  3 05:04 [01;34mNC_1_6[0m
+drwxr-x--- 5 amarinei amarinei 4096 Oct  3 05:18 [01;34mNC_5_5[0m
+drwxr-x--- 5 amarinei amarinei 4096 Oct  3 06:06 [01;34mNC_20_10[0m
+]0;amarinei@login1:/scratch/amarinei/data/Atmospherics[?2004h[amarinei@login1 Atmospherics]$ cd NC [K_20_10/[K[K[K[K[K[K[K[K[K[K[K[Kd[Kcd NC_20_10/
+[?2004l]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/NC_20_10[?2004h[amarinei@login1 NC_20_10]$ ls ltr[K[K[K-ltr
+[?2004ltotal 20
+drwxr-x--- 2 amarinei amarinei  4096 Oct  3 06:03 [0m[01;34mreco[0m
+drwxr-x--- 3 amarinei amarinei 12288 Oct  3 06:06 [01;34mlogs[0m
+drwxr-x--- 2 amarinei amarinei  4096 Oct  3 06:07 [01;34mhdf5[0m
+]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/NC_20_10[?2004h[amarinei@login1 NC_20_10]$ cd [K[K[Kcd d[Khdf5/
+[?2004l]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/NC_20_10/hdf5[?2004h[amarinei@login1 hdf5]$ ls
+[?2004lNeutrinoML_r00001_s00000_ts422554.h5  NeutrinoML_r00007_s00000_ts419728.h5
+NeutrinoML_r00002_s00000_ts418552.h5  NeutrinoML_r00008_s00000_ts419026.h5
+NeutrinoML_r00003_s00000_ts419123.h5  NeutrinoML_r00009_s00000_ts420858.h5
+NeutrinoML_r00004_s00000_ts418623.h5  NeutrinoML_r00010_s00000_ts420873.h5
+NeutrinoML_r00005_s00000_ts418540.h5  debug.log
+NeutrinoML_r00006_s00000_ts418554.h5  reco_hist.root
+]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/NC_20_10/hdf5[?2004h[amarinei@login1 hdf5]$ cd ..
+[?2004l]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/NC_20_10[?2004h[amarinei@login1 NC_20_10]$ ls -ltr
+[?2004ltotal 20
+drwxr-x--- 2 amarinei amarinei  4096 Oct  3 06:03 [0m[01;34mreco[0m
+drwxr-x--- 3 amarinei amarinei 12288 Oct  3 06:06 [01;34mlogs[0m
+drwxr-x--- 2 amarinei amarinei  4096 Oct  3 06:07 [01;34mhdf5[0m
+]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/NC_20_10[?2004h[amarinei@login1 NC_20_10]$ scri[ts
+[?2004l[?2004h> s[Kq
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/NC_20_10[?2004h[amarinei@login1 NC_20_10]$ scrits[K[Kpts
+[?2004l]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ sq
+[?2004l          JOBID     USER      ACCOUNT           NAME  ST  TIME_LEFT NODES CPUS TRES_PER_N MIN_MEM NODELIST (REASON) 
+]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ (reverse-i-search)`': [Ks': [7ms[27mqb': [7msb[27match --account=def-nilic run_all_NC.sh [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@a': [7msba[27m[10@[amarinei@login1 LArSoft_scripts]$ sba[C
+[?2004lSubmitted batch job 6371160
+]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ 
+[?2004l]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ git status
+[?2004lOn branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   delete_detsim.sh[m
+	[31mmodified:   delete_g4.sh[m
+	[31mmodified:   process_hdf5.sh[m
+	[31mmodified:   run_all_NC.sh[m
+	[31mdeleted:    run_all_tau_NC.sh[m
+	[31mmodified:   run_conc_add_proc.sh[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mexplore_h5py/[m
+	[31mslurm-5957451.out[m
+	[31mslurm-5968713.out[m
+	[31mslurm-5972066.out[m
+	[31mslurm-5985089.out[m
+	[31mslurm-5985526.out[m
+	[31mslurm-5987274.out[m
+	[31mslurm-5994170.out[m
+	[31mslurm-6005666.out[m
+	[31mslurm-6015591.out[m
+	[31mslurm-6015636.out[m
+	[31mslurm-6023390.out[m
+	[31mslurm-6024321.out[m
+	[31mslurm-6024814.out[m
+	[31mslurm-6025501.out[m
+	[31mslurm-6026118.out[m
+	[31mslurm-6069056.out[m
+	[31mslurm-6102191.out[m
+	[31mslurm-6108991.out[m
+	[31mslurm-6121225.out[m
+	[31mslurm-6123883.out[m
+	[31mslurm-6130744.out[m
+	[31mslurm-6130783.out[m
+	[31mslurm-6177010.out[m
+	[31mslurm-6177750.out[m
+	[31mslurm-6179793.out[m
+	[31mslurm-6245402.out[m
+	[31mslurm-6245629.out[m
+	[31mslurm-6369245.out[m
+	[31mslurm-6370466.out[m
+	[31mslurm-6370504.out[m
+	[31mslurm-6370511.out[m
+	[31mslurm-6370574.out[m
+	[31mslurm-6370808.out[m
+	[31mslurm-6371160.out[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ git add[7mdelete_detsim.sh[27mdelete_detsim.sh [1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C [K[C[7mdelete_g4.sh[27mdelete_g4.sh [7mprocess_[27m[7mh[27m[7mdf5.sh[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprocess_hdf5.sh [7mrun_all_NC.sh[27m[C[C[C[C[C[C[C[Crun_all_NC.sh [7mrun_all_tau_NC.sh[27mrun_all_tau_NC.sh [7mrun_conc_add_proc.sh[27mrun_conc_add_proc.sh
+[?2004l]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ git commit -m "added fcl for NC and added [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K add explore_h5py/
+[?2004l]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ git commit -m "added directory to explore hdf5  files/[K. slighl[Ktly changed running scripts and fixed bug in NC fcl."
+[?2004l[master 85cc179] added directory to explore hdf5 files. slightly changed running scripts and fixed bug in NC fcl.
+ 8 files changed, 596 insertions(+), 39 deletions(-)
+ create mode 100644 explore_h5py/print_contents.py
+ create mode 100644 explore_h5py/typescript
+ delete mode 100644 run_all_tau_NC.sh
+]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ git push
+[?2004lEnumerating objects: 16, done.
+Counting objects:   6% (1/16)Counting objects:  12% (2/16)Counting objects:  18% (3/16)Counting objects:  25% (4/16)Counting objects:  31% (5/16)Counting objects:  37% (6/16)Counting objects:  43% (7/16)Counting objects:  50% (8/16)Counting objects:  56% (9/16)Counting objects:  62% (10/16)Counting objects:  68% (11/16)Counting objects:  75% (12/16)Counting objects:  81% (13/16)Counting objects:  87% (14/16)Counting objects:  93% (15/16)Counting objects: 100% (16/16)Counting objects: 100% (16/16), done.
+Delta compression using up to 32 threads
+Compressing objects:  10% (1/10)Compressing objects:  20% (2/10)Compressing objects:  30% (3/10)Compressing objects:  40% (4/10)Compressing objects:  50% (5/10)Compressing objects:  60% (6/10)Compressing objects:  70% (7/10)Compressing objects:  80% (8/10)Compressing objects:  90% (9/10)Compressing objects: 100% (10/10)Compressing objects: 100% (10/10), done.
+Writing objects:  10% (1/10)Writing objects:  20% (2/10)Writing objects:  30% (3/10)Writing objects:  40% (4/10)Writing objects:  50% (5/10)Writing objects:  60% (6/10)Writing objects:  70% (7/10)Writing objects:  80% (8/10)Writing objects:  90% (9/10)Writing objects: 100% (10/10)Writing objects: 100% (10/10), 9.50 KiB | 4.75 MiB/s, done.
+Total 10 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/6)[Kremote: Resolving deltas:  16% (1/6)[Kremote: Resolving deltas:  33% (2/6)[Kremote: Resolving deltas:  50% (3/6)[Kremote: Resolving deltas:  66% (4/6)[Kremote: Resolving deltas:  83% (5/6)[Kremote: Resolving deltas: 100% (6/6)[Kremote: Resolving deltas: 100% (6/6), completed with 6 local objects.[K
+To https://github.com/ramarine/NuProductionAndTraining.git
+   7588d33..85cc179  master -> master
+]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ sq
+[?2004l          JOBID     USER      ACCOUNT           NAME  ST  TIME_LEFT NODES CPUS TRES_PER_N MIN_MEM NODELIST (REASON) 
+6371163_[1-1000 amarinei def-nilic_cp          NC_g4  PD   22:30:00     1    1        N/A     32G  (Dependency) 
+        6371164 amarinei def-nilic_cp NC_del_gen_eve  PD    1:30:00     1    1        N/A      1G  (Dependency) 
+6371165_[1-1000 amarinei def-nilic_cp      NC_detsim  PD   22:30:00     1    1        N/A     32G  (Dependency) 
+        6371166 amarinei def-nilic_cp      NC_del_g4  PD    1:30:00     1    1        N/A      1G  (Dependency) 
+6371167_[1-1000 amarinei def-nilic_cp        NC_reco  PD   22:30:00     1    1        N/A     32G  (Dependency) 
+        6371168 amarinei def-nilic_cp  NC_del_detsim  PD    1:30:00     1    1        N/A      1G  (Dependency) 
+6371169_[1-1000 amarinei def-nilic_cp    NC_makehdf5  PD   22:30:00     1    1        N/A     32G  (Dependency) 
+        6371170 amarinei def-nilic_cp           wrap  PD    1:30:00     1    1        N/A      1G  (Dependency) 
+6371162_[4-1000 amarinei def-nilic_cp  NC_gen_events  PD   22:30:00     1    1        N/A     32G  (Priority) 
+]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ 
+[?2004l]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ 
+[?2004l]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ 
+[?2004l]0;amarinei@login1:/scratch/amarinei/LArSoft_scripts[?2004h[amarinei@login1 LArSoft_scripts]$ data
+[?2004l]0;amarinei@login1:/scratch/amarinei/data/Atmospherics[?2004h[amarinei@login1 Atmospherics]$ ls -ltr
+[?2004ltotal 44
+drwxr-x--- 5 amarinei amarinei 4096 Sep 25 01:49 [0m[01;34mECC_1_10[0m
+drwxr-x--- 5 amarinei amarinei 4096 Sep 25 02:11 [01;34mTauCC_1_10[0m
+drwxr-x--- 5 amarinei amarinei 4096 Sep 25 02:11 [01;34mMuCC_1_10[0m
+drwxr-x--- 5 amarinei amarinei 4096 Sep 26 22:58 [01;34mECC_250_1000[0m
+drwxr-x--- 5 amarinei amarinei 4096 Sep 27 05:25 [01;34mMuCC_250_1000[0m
+drwxr-x--- 7 amarinei amarinei 4096 Sep 30 01:17 [01;34mTauCC_250_1000[0m
+drwxr-x--- 8 amarinei amarinei 4096 Oct  3 04:54 [01;34mNC_1_5[0m
+drwxr-x--- 8 amarinei amarinei 4096 Oct  3 05:04 [01;34mNC_1_6[0m
+drwxr-x--- 5 amarinei amarinei 4096 Oct  3 05:18 [01;34mNC_5_5[0m
+drwxr-x--- 5 amarinei amarinei 4096 Oct  3 06:06 [01;34mNC_20_10[0m
+drwxr-x--- 4 amarinei amarinei 4096 Oct  3 07:01 [01;34mNC_250_1000[0m
+]0;amarinei@login1:/scratch/amarinei/data/Atmospherics[?2004h[amarinei@login1 Atmospherics]$ cd TauCC_250_1000/
+[?2004l]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/TauCC_250_1000[?2004h[amarinei@login1 TauCC_250_1000]$ cd hdf5
+[?2004l]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/TauCC_250_1000/hdf5[?2004h[amarinei@login1 hdf5]$ l s[K[Ks -ltr
+[?2004l^X^C
+]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/TauCC_250_1000/hdf5[?2004h[amarinei@login1 hdf5]$ ls
+[?2004l10f_10e.gnn.h5                        NeutrinoML_r00502_s00000_ts402152.h5
+NeutrinoML_r00001_s00000_ts707758.h5  NeutrinoML_r00503_s00000_ts476327.h5
+NeutrinoML_r00003_s00000_ts619758.h5  NeutrinoML_r00504_s00000_ts564363.h5
+NeutrinoML_r00004_s00000_ts088356.h5  NeutrinoML_r00505_s00000_ts286341.h5
+NeutrinoML_r00005_s00000_ts865038.h5  NeutrinoML_r00506_s00000_ts545907.h5
+NeutrinoML_r00006_s00000_ts922563.h5  NeutrinoML_r00507_s00000_ts481633.h5
+NeutrinoML_r00007_s00000_ts863967.h5  NeutrinoML_r00509_s00000_ts343881.h5
+NeutrinoML_r00008_s00000_ts737414.h5  NeutrinoML_r00510_s00000_ts686780.h5
+NeutrinoML_r00009_s00000_ts756806.h5  NeutrinoML_r00511_s00000_ts972671.h5
+NeutrinoML_r00010_s00000_ts904811.h5  NeutrinoML_r00512_s00000_ts983019.h5
+NeutrinoML_r00011_s00000_ts920436.h5  NeutrinoML_r00513_s00000_ts907916.h5
+NeutrinoML_r00012_s00000_ts897392.h5  NeutrinoML_r00514_s00000_ts306127.h5
+NeutrinoML_r00013_s00000_ts479957.h5  NeutrinoML_r00515_s00000_ts406661.h5
+NeutrinoML_r00014_s00000_ts514397.h5  NeutrinoML_r00516_s00000_ts404882.h5
+NeutrinoML_r00015_s00000_ts517369.h5  NeutrinoML_r00517_s00000_ts273275.h5
+NeutrinoML_r00016_s00000_ts512640.h5  NeutrinoML_r00518_s00000_ts558174.h5
+NeutrinoML_r00017_s00000_ts663401.h5  NeutrinoML_r00519_s00000_ts569170.h5
+NeutrinoML_r00018_s00000_ts455407.h5  NeutrinoML_r00520_s00000_ts784633.h5
+NeutrinoML_r00019_s00000_ts763227.h5  NeutrinoML_r00521_s00000_ts876703.h5
+NeutrinoML_r00020_s00000_ts885028.h5  NeutrinoML_r00522_s00000_ts609938.h5
+NeutrinoML_r00021_s00000_ts112140.h5  NeutrinoML_r00523_s00000_ts550345.h5
+NeutrinoML_r00022_s00000_ts219877.h5  NeutrinoML_r00524_s00000_ts534908.h5
+NeutrinoML_r00023_s00000_ts567821.h5  NeutrinoML_r00525_s00000_ts731723.h5
+NeutrinoML_r00024_s00000_ts338343.h5  NeutrinoML_r00526_s00000_ts708561.h5
+NeutrinoML_r00025_s00000_ts421949.h5  NeutrinoML_r00527_s00000_ts593752.h5
+NeutrinoML_r00026_s00000_ts422716.h5  NeutrinoML_r00528_s00000_ts216360.h5
+NeutrinoML_r00027_s00000_ts937141.h5  NeutrinoML_r00529_s00000_ts889000.h5
+NeutrinoML_r00028_s00000_ts934741.h5  NeutrinoML_r00530_s00000_ts076190.h5
+NeutrinoML_r00029_s00000_ts234700.h5  NeutrinoML_r00531_s00000_ts952674.h5
+NeutrinoML_r00030_s00000_ts065684.h5  NeutrinoML_r00533_s00000_ts594285.h5
+NeutrinoML_r00031_s00000_ts996638.h5  NeutrinoML_r00534_s00000_ts550191.h5
+NeutrinoML_r00032_s00000_ts517632.h5  NeutrinoML_r00535_s00000_ts320328.h5
+NeutrinoML_r00033_s00000_ts318430.h5  NeutrinoML_r00536_s00000_ts547164.h5
+NeutrinoML_r00034_s00000_ts695816.h5  NeutrinoML_r00537_s00000_ts584993.h5
+NeutrinoML_r00035_s00000_ts572312.h5  NeutrinoML_r00538_s00000_ts485995.h5
+NeutrinoML_r00036_s00000_ts669998.h5  NeutrinoML_r00539_s00000_ts324394.h5
+NeutrinoML_r00037_s00000_ts954394.h5  NeutrinoML_r00540_s00000_ts780757.h5
+NeutrinoML_r00038_s00000_ts757230.h5  NeutrinoML_r00541_s00000_ts492352.h5
+NeutrinoML_r00039_s00000_ts181832.h5  NeutrinoML_r00542_s00000_ts013022.h5
+NeutrinoML_r00040_s00000_ts300204.h5  NeutrinoML_r00543_s00000_ts673021.h5
+NeutrinoML_r00041_s00000_ts888575.h5  NeutrinoML_r00544_s00000_ts473933.h5
+NeutrinoML_r00042_s00000_ts697508.h5  NeutrinoML_r00545_s00000_ts345338.h5
+NeutrinoML_r00043_s00000_ts298514.h5  NeutrinoML_r00546_s00000_ts273965.h5
+NeutrinoML_r00044_s00000_ts250485.h5  NeutrinoML_r00547_s00000_ts416853.h5
+NeutrinoML_r00045_s00000_ts188080.h5  NeutrinoML_r00548_s00000_ts211724.h5
+NeutrinoML_r00046_s00000_ts180570.h5  NeutrinoML_r00549_s00000_ts487119.h5
+NeutrinoML_r00047_s00000_ts215991.h5  NeutrinoML_r00550_s00000_ts640392.h5
+NeutrinoML_r00048_s00000_ts165596.h5  NeutrinoML_r00551_s00000_ts027355.h5
+NeutrinoML_r00049_s00000_ts011883.h5  NeutrinoML_r00552_s00000_ts032409.h5
+NeutrinoML_r00050_s00000_ts734559.h5  NeutrinoML_r00553_s00000_ts090701.h5
+NeutrinoML_r00052_s00000_ts600396.h5  NeutrinoML_r00554_s00000_ts137506.h5
+NeutrinoML_r00053_s00000_ts953390.h5  NeutrinoML_r00555_s00000_ts399119.h5
+NeutrinoML_r00054_s00000_ts477036.h5  NeutrinoML_r00556_s00000_ts922568.h5
+NeutrinoML_r00055_s00000_ts348089.h5  NeutrinoML_r00557_s00000_ts136035.h5
+NeutrinoML_r00056_s00000_ts224511.h5  NeutrinoML_r00558_s00000_ts472726.h5
+NeutrinoML_r00057_s00000_ts222607.h5  NeutrinoML_r00559_s00000_ts637905.h5
+NeutrinoML_r00058_s00000_ts984368.h5  NeutrinoML_r00560_s00000_ts537578.h5
+NeutrinoML_r00059_s00000_ts846399.h5  NeutrinoML_r00561_s00000_ts799344.h5
+NeutrinoML_r00060_s00000_ts029164.h5  NeutrinoML_r00562_s00000_ts874462.h5
+NeutrinoML_r00061_s00000_ts652334.h5  NeutrinoML_r00563_s00000_ts967077.h5
+NeutrinoML_r00062_s00000_ts613215.h5  NeutrinoML_r00564_s00000_ts466769.h5
+NeutrinoML_r00063_s00000_ts592154.h5  NeutrinoML_r00565_s00000_ts430134.h5
+NeutrinoML_r00064_s00000_ts629183.h5  NeutrinoML_r00566_s00000_ts315018.h5
+NeutrinoML_r00065_s00000_ts622435.h5  NeutrinoML_r00568_s00000_ts372887.h5
+NeutrinoML_r00066_s00000_ts623715.h5  NeutrinoML_r00569_s00000_ts536569.h5
+NeutrinoML_r00067_s00000_ts515877.h5  NeutrinoML_r00570_s00000_ts949846.h5
+NeutrinoML_r00068_s00000_ts151044.h5  NeutrinoML_r00571_s00000_ts910587.h5
+NeutrinoML_r00069_s00000_ts280331.h5  NeutrinoML_r00572_s00000_ts175655.h5
+NeutrinoML_r00070_s00000_ts168669.h5  NeutrinoML_r00573_s00000_ts632516.h5
+NeutrinoML_r00071_s00000_ts211081.h5  NeutrinoML_r00574_s00000_ts432724.h5
+NeutrinoML_r00072_s00000_ts031939.h5  NeutrinoML_r00575_s00000_ts709045.h5
+NeutrinoML_r00073_s00000_ts364040.h5  NeutrinoML_r00576_s00000_ts838302.h5
+NeutrinoML_r00074_s00000_ts391947.h5  NeutrinoML_r00577_s00000_ts470946.h5
+NeutrinoML_r00075_s00000_ts339829.h5  NeutrinoML_r00578_s00000_ts356199.h5
+NeutrinoML_r00076_s00000_ts362105.h5  NeutrinoML_r00579_s00000_ts649851.h5
+NeutrinoML_r00077_s00000_ts791128.h5  NeutrinoML_r00581_s00000_ts366296.h5
+NeutrinoML_r00078_s00000_ts683938.h5  NeutrinoML_r00582_s00000_ts495481.h5
+NeutrinoML_r00079_s00000_ts492941.h5  NeutrinoML_r00583_s00000_ts496024.h5
+NeutrinoML_r00080_s00000_ts193335.h5  NeutrinoML_r00584_s00000_ts402041.h5
+NeutrinoML_r00081_s00000_ts229362.h5  NeutrinoML_r00585_s00000_ts036415.h5
+NeutrinoML_r00082_s00000_ts193310.h5  NeutrinoML_r00586_s00000_ts190651.h5
+NeutrinoML_r00083_s00000_ts160596.h5  NeutrinoML_r00587_s00000_ts441609.h5
+NeutrinoML_r00084_s00000_ts154135.h5  NeutrinoML_r00588_s00000_ts144685.h5
+NeutrinoML_r00085_s00000_ts702972.h5  NeutrinoML_r00589_s00000_ts454536.h5
+NeutrinoML_r00086_s00000_ts309724.h5  NeutrinoML_r00590_s00000_ts556366.h5
+NeutrinoML_r00087_s00000_ts109042.h5  NeutrinoML_r00591_s00000_ts998957.h5
+NeutrinoML_r00088_s00000_ts320115.h5  NeutrinoML_r00592_s00000_ts440985.h5
+NeutrinoML_r00089_s00000_ts749842.h5  NeutrinoML_r00593_s00000_ts797024.h5
+NeutrinoML_r00090_s00000_ts775134.h5  NeutrinoML_r00594_s00000_ts784161.h5
+NeutrinoML_r00091_s00000_ts095329.h5  NeutrinoML_r00595_s00000_ts890545.h5
+NeutrinoML_r00092_s00000_ts776731.h5  NeutrinoML_r00596_s00000_ts138452.h5
+NeutrinoML_r00093_s00000_ts598859.h5  NeutrinoML_r00597_s00000_ts909634.h5
+NeutrinoML_r00094_s00000_ts436890.h5  NeutrinoML_r00598_s00000_ts891824.h5
+NeutrinoML_r00095_s00000_ts441876.h5  NeutrinoML_r00599_s00000_ts024639.h5
+NeutrinoML_r00096_s00000_ts366698.h5  NeutrinoML_r00600_s00000_ts891447.h5
+NeutrinoML_r00097_s00000_ts216091.h5  NeutrinoML_r00602_s00000_ts859263.h5
+NeutrinoML_r00098_s00000_ts200755.h5  NeutrinoML_r00603_s00000_ts959963.h5
+NeutrinoML_r00099_s00000_ts490341.h5  NeutrinoML_r00604_s00000_ts734000.h5
+NeutrinoML_r00100_s00000_ts139452.h5  NeutrinoML_r00605_s00000_ts989146.h5
+NeutrinoML_r00101_s00000_ts157568.h5  NeutrinoML_r00606_s00000_ts787352.h5
+NeutrinoML_r00102_s00000_ts891361.h5  NeutrinoML_r00607_s00000_ts831862.h5
+NeutrinoML_r00103_s00000_ts833599.h5  NeutrinoML_r00608_s00000_ts445527.h5
+NeutrinoML_r00104_s00000_ts893604.h5  NeutrinoML_r00609_s00000_ts471526.h5
+NeutrinoML_r00105_s00000_ts834291.h5  NeutrinoML_r00610_s00000_ts248878.h5
+NeutrinoML_r00106_s00000_ts987890.h5  NeutrinoML_r00611_s00000_ts555350.h5
+NeutrinoML_r00107_s00000_ts852460.h5  NeutrinoML_r00612_s00000_ts255088.h5
+NeutrinoML_r00108_s00000_ts756946.h5  NeutrinoML_r00613_s00000_ts390887.h5
+NeutrinoML_r00109_s00000_ts503204.h5  NeutrinoML_r00614_s00000_ts069871.h5
+NeutrinoML_r00110_s00000_ts589494.h5  NeutrinoML_r00615_s00000_ts098562.h5
+NeutrinoML_r00111_s00000_ts676562.h5  NeutrinoML_r00616_s00000_ts055160.h5
+NeutrinoML_r00112_s00000_ts358323.h5  NeutrinoML_r00617_s00000_ts666651.h5
+NeutrinoML_r00113_s00000_ts698927.h5  NeutrinoML_r00618_s00000_ts872931.h5
+NeutrinoML_r00114_s00000_ts087591.h5  NeutrinoML_r00619_s00000_ts401898.h5
+NeutrinoML_r00115_s00000_ts244977.h5  NeutrinoML_r00620_s00000_ts613135.h5
+NeutrinoML_r00116_s00000_ts487904.h5  NeutrinoML_r00621_s00000_ts702277.h5
+NeutrinoML_r00117_s00000_ts458694.h5  NeutrinoML_r00622_s00000_ts027355.h5
+NeutrinoML_r00118_s00000_ts823868.h5  NeutrinoML_r00623_s00000_ts599466.h5
+NeutrinoML_r00119_s00000_ts586182.h5  NeutrinoML_r00624_s00000_ts845690.h5
+NeutrinoML_r00120_s00000_ts462012.h5  NeutrinoML_r00625_s00000_ts075492.h5
+NeutrinoML_r00121_s00000_ts553647.h5  NeutrinoML_r00626_s00000_ts016591.h5
+NeutrinoML_r00122_s00000_ts498538.h5  NeutrinoML_r00627_s00000_ts514574.h5
+NeutrinoML_r00123_s00000_ts646254.h5  NeutrinoML_r00628_s00000_ts835489.h5
+NeutrinoML_r00124_s00000_ts246848.h5  NeutrinoML_r00629_s00000_ts754777.h5
+NeutrinoML_r00125_s00000_ts527061.h5  NeutrinoML_r00630_s00000_ts005248.h5
+NeutrinoML_r00126_s00000_ts651096.h5  NeutrinoML_r00631_s00000_ts738687.h5
+NeutrinoML_r00127_s00000_ts311924.h5  NeutrinoML_r00632_s00000_ts409901.h5
+NeutrinoML_r00128_s00000_ts288286.h5  NeutrinoML_r00633_s00000_ts517202.h5
+NeutrinoML_r00129_s00000_ts326109.h5  NeutrinoML_r00634_s00000_ts625676.h5
+NeutrinoML_r00130_s00000_ts401614.h5  NeutrinoML_r00635_s00000_ts579997.h5
+NeutrinoML_r00131_s00000_ts695033.h5  NeutrinoML_r00636_s00000_ts561936.h5
+NeutrinoML_r00132_s00000_ts730938.h5  NeutrinoML_r00637_s00000_ts956738.h5
+NeutrinoML_r00133_s00000_ts651222.h5  NeutrinoML_r00638_s00000_ts013644.h5
+NeutrinoML_r00134_s00000_ts552401.h5  NeutrinoML_r00639_s00000_ts931260.h5
+NeutrinoML_r00135_s00000_ts874008.h5  NeutrinoML_r00640_s00000_ts536297.h5
+NeutrinoML_r00136_s00000_ts754673.h5  NeutrinoML_r00641_s00000_ts110635.h5
+NeutrinoML_r00137_s00000_ts839826.h5  NeutrinoML_r00642_s00000_ts045470.h5
+NeutrinoML_r00138_s00000_ts824278.h5  NeutrinoML_r00643_s00000_ts371940.h5
+NeutrinoML_r00139_s00000_ts818789.h5  NeutrinoML_r00644_s00000_ts452608.h5
+NeutrinoML_r00140_s00000_ts754033.h5  NeutrinoML_r00645_s00000_ts069383.h5
+NeutrinoML_r00141_s00000_ts768384.h5  NeutrinoML_r00646_s00000_ts898639.h5
+NeutrinoML_r00142_s00000_ts841644.h5  NeutrinoML_r00647_s00000_ts641552.h5
+NeutrinoML_r00143_s00000_ts865818.h5  NeutrinoML_r00648_s00000_ts489463.h5
+NeutrinoML_r00144_s00000_ts662710.h5  NeutrinoML_r00649_s00000_ts596796.h5
+NeutrinoML_r00145_s00000_ts599862.h5  NeutrinoML_r00650_s00000_ts790429.h5
+NeutrinoML_r00146_s00000_ts629341.h5  NeutrinoML_r00651_s00000_ts869525.h5
+NeutrinoML_r00147_s00000_ts712218.h5  NeutrinoML_r00652_s00000_ts943038.h5
+NeutrinoML_r00148_s00000_ts743916.h5  NeutrinoML_r00653_s00000_ts696322.h5
+NeutrinoML_r00149_s00000_ts528745.h5  NeutrinoML_r00654_s00000_ts593844.h5
+NeutrinoML_r00150_s00000_ts581710.h5  NeutrinoML_r00655_s00000_ts901138.h5
+NeutrinoML_r00151_s00000_ts603703.h5  NeutrinoML_r00656_s00000_ts336284.h5
+NeutrinoML_r00152_s00000_ts588222.h5  NeutrinoML_r00657_s00000_ts975994.h5
+NeutrinoML_r00153_s00000_ts385260.h5  NeutrinoML_r00658_s00000_ts602910.h5
+NeutrinoML_r00154_s00000_ts164643.h5  NeutrinoML_r00659_s00000_ts666188.h5
+NeutrinoML_r00155_s00000_ts165179.h5  NeutrinoML_r00660_s00000_ts727072.h5
+NeutrinoML_r00156_s00000_ts208873.h5  NeutrinoML_r00661_s00000_ts897545.h5
+NeutrinoML_r00157_s00000_ts492425.h5  NeutrinoML_r00662_s00000_ts819431.h5
+NeutrinoML_r00158_s00000_ts216431.h5  NeutrinoML_r00663_s00000_ts138920.h5
+NeutrinoML_r00159_s00000_ts865716.h5  NeutrinoML_r00664_s00000_ts934820.h5
+NeutrinoML_r00160_s00000_ts178295.h5  NeutrinoML_r00665_s00000_ts864139.h5
+NeutrinoML_r00161_s00000_ts278848.h5  NeutrinoML_r00666_s00000_ts886820.h5
+NeutrinoML_r00162_s00000_ts189448.h5  NeutrinoML_r00667_s00000_ts643939.h5
+NeutrinoML_r00163_s00000_ts373640.h5  NeutrinoML_r00668_s00000_ts309808.h5
+NeutrinoML_r00165_s00000_ts962624.h5  NeutrinoML_r00669_s00000_ts727479.h5
+NeutrinoML_r00166_s00000_ts983315.h5  NeutrinoML_r00670_s00000_ts579482.h5
+NeutrinoML_r00167_s00000_ts027509.h5  NeutrinoML_r00671_s00000_ts386374.h5
+NeutrinoML_r00168_s00000_ts745070.h5  NeutrinoML_r00672_s00000_ts274753.h5
+NeutrinoML_r00169_s00000_ts862497.h5  NeutrinoML_r00673_s00000_ts330393.h5
+NeutrinoML_r00170_s00000_ts219855.h5  NeutrinoML_r00674_s00000_ts873938.h5
+NeutrinoML_r00171_s00000_ts843530.h5  NeutrinoML_r00675_s00000_ts373642.h5
+NeutrinoML_r00172_s00000_ts361925.h5  NeutrinoML_r00676_s00000_ts125479.h5
+NeutrinoML_r00175_s00000_ts297239.h5  NeutrinoML_r00677_s00000_ts658069.h5
+NeutrinoML_r00176_s00000_ts824133.h5  NeutrinoML_r00678_s00000_ts459549.h5
+NeutrinoML_r00177_s00000_ts486833.h5  NeutrinoML_r00679_s00000_ts176370.h5
+NeutrinoML_r00178_s00000_ts527131.h5  NeutrinoML_r00680_s00000_ts743036.h5
+NeutrinoML_r00179_s00000_ts742816.h5  NeutrinoML_r00681_s00000_ts371654.h5
+NeutrinoML_r00180_s00000_ts593799.h5  NeutrinoML_r00682_s00000_ts891925.h5
+NeutrinoML_r00181_s00000_ts426683.h5  NeutrinoML_r00683_s00000_ts047343.h5
+NeutrinoML_r00182_s00000_ts971773.h5  NeutrinoML_r00684_s00000_ts475517.h5
+NeutrinoML_r00183_s00000_ts986259.h5  NeutrinoML_r00685_s00000_ts883528.h5
+NeutrinoML_r00184_s00000_ts961181.h5  NeutrinoML_r00686_s00000_ts052446.h5
+NeutrinoML_r00185_s00000_ts329776.h5  NeutrinoML_r00687_s00000_ts614430.h5
+NeutrinoML_r00186_s00000_ts319797.h5  NeutrinoML_r00688_s00000_ts229691.h5
+NeutrinoML_r00187_s00000_ts521762.h5  NeutrinoML_r00689_s00000_ts569295.h5
+NeutrinoML_r00188_s00000_ts979673.h5  NeutrinoML_r00690_s00000_ts392177.h5
+NeutrinoML_r00189_s00000_ts113439.h5  NeutrinoML_r00691_s00000_ts135475.h5
+NeutrinoML_r00190_s00000_ts340661.h5  NeutrinoML_r00692_s00000_ts221637.h5
+NeutrinoML_r00191_s00000_ts051912.h5  NeutrinoML_r00693_s00000_ts260578.h5
+NeutrinoML_r00192_s00000_ts802055.h5  NeutrinoML_r00694_s00000_ts323545.h5
+NeutrinoML_r00193_s00000_ts292881.h5  NeutrinoML_r00695_s00000_ts092119.h5
+NeutrinoML_r00194_s00000_ts620637.h5  NeutrinoML_r00696_s00000_ts248820.h5
+NeutrinoML_r00195_s00000_ts109597.h5  NeutrinoML_r00697_s00000_ts467346.h5
+NeutrinoML_r00196_s00000_ts247074.h5  NeutrinoML_r00698_s00000_ts402495.h5
+NeutrinoML_r00197_s00000_ts181937.h5  NeutrinoML_r00699_s00000_ts245429.h5
+NeutrinoML_r00198_s00000_ts812772.h5  NeutrinoML_r00700_s00000_ts846910.h5
+NeutrinoML_r00199_s00000_ts131500.h5  NeutrinoML_r00701_s00000_ts070563.h5
+NeutrinoML_r00200_s00000_ts780582.h5  NeutrinoML_r00702_s00000_ts690404.h5
+NeutrinoML_r00201_s00000_ts948874.h5  NeutrinoML_r00703_s00000_ts945177.h5
+NeutrinoML_r00202_s00000_ts093386.h5  NeutrinoML_r00704_s00000_ts219157.h5
+NeutrinoML_r00203_s00000_ts801237.h5  NeutrinoML_r00705_s00000_ts680990.h5
+NeutrinoML_r00204_s00000_ts114275.h5  NeutrinoML_r00706_s00000_ts122504.h5
+NeutrinoML_r00205_s00000_ts935792.h5  NeutrinoML_r00707_s00000_ts013320.h5
+NeutrinoML_r00206_s00000_ts174222.h5  NeutrinoML_r00708_s00000_ts888314.h5
+NeutrinoML_r00207_s00000_ts842510.h5  NeutrinoML_r00709_s00000_ts696682.h5
+NeutrinoML_r00208_s00000_ts497409.h5  NeutrinoML_r00710_s00000_ts801559.h5
+NeutrinoML_r00209_s00000_ts549001.h5  NeutrinoML_r00711_s00000_ts920589.h5
+NeutrinoML_r00210_s00000_ts427322.h5  NeutrinoML_r00712_s00000_ts736741.h5
+NeutrinoML_r00211_s00000_ts496254.h5  NeutrinoML_r00713_s00000_ts188051.h5
+NeutrinoML_r00212_s00000_ts647091.h5  NeutrinoML_r00714_s00000_ts825998.h5
+NeutrinoML_r00213_s00000_ts232749.h5  NeutrinoML_r00715_s00000_ts654800.h5
+NeutrinoML_r00214_s00000_ts928107.h5  NeutrinoML_r00716_s00000_ts428187.h5
+NeutrinoML_r00215_s00000_ts270670.h5  NeutrinoML_r00717_s00000_ts769008.h5
+NeutrinoML_r00216_s00000_ts389223.h5  NeutrinoML_r00718_s00000_ts622104.h5
+NeutrinoML_r00217_s00000_ts769458.h5  NeutrinoML_r00719_s00000_ts958831.h5
+NeutrinoML_r00218_s00000_ts058776.h5  NeutrinoML_r00720_s00000_ts610928.h5
+NeutrinoML_r00219_s00000_ts164624.h5  NeutrinoML_r00721_s00000_ts125894.h5
+NeutrinoML_r00220_s00000_ts584901.h5  NeutrinoML_r00722_s00000_ts571552.h5
+NeutrinoML_r00221_s00000_ts405422.h5  NeutrinoML_r00723_s00000_ts769198.h5
+NeutrinoML_r00222_s00000_ts380290.h5  NeutrinoML_r00724_s00000_ts822746.h5
+NeutrinoML_r00223_s00000_ts802594.h5  NeutrinoML_r00725_s00000_ts871906.h5
+NeutrinoML_r00224_s00000_ts369668.h5  NeutrinoML_r00726_s00000_ts665286.h5
+NeutrinoML_r00225_s00000_ts452891.h5  NeutrinoML_r00727_s00000_ts626072.h5
+NeutrinoML_r00226_s00000_ts069899.h5  NeutrinoML_r00728_s00000_ts737603.h5
+NeutrinoML_r00227_s00000_ts596965.h5  NeutrinoML_r00730_s00000_ts702709.h5
+NeutrinoML_r00228_s00000_ts410000.h5  NeutrinoML_r00731_s00000_ts587859.h5
+NeutrinoML_r00229_s00000_ts428996.h5  NeutrinoML_r00732_s00000_ts612404.h5
+NeutrinoML_r00230_s00000_ts906459.h5  NeutrinoML_r00733_s00000_ts760025.h5
+NeutrinoML_r00231_s00000_ts893590.h5  NeutrinoML_r00734_s00000_ts760387.h5
+NeutrinoML_r00232_s00000_ts380454.h5  NeutrinoML_r00735_s00000_ts769864.h5
+NeutrinoML_r00233_s00000_ts432587.h5  NeutrinoML_r00736_s00000_ts693349.h5
+NeutrinoML_r00234_s00000_ts460315.h5  NeutrinoML_r00737_s00000_ts760651.h5
+NeutrinoML_r00235_s00000_ts805210.h5  NeutrinoML_r00738_s00000_ts663998.h5
+NeutrinoML_r00236_s00000_ts740743.h5  NeutrinoML_r00739_s00000_ts852399.h5
+NeutrinoML_r00237_s00000_ts744773.h5  NeutrinoML_r00740_s00000_ts858150.h5
+NeutrinoML_r00238_s00000_ts039103.h5  NeutrinoML_r00741_s00000_ts909042.h5
+NeutrinoML_r00239_s00000_ts412454.h5  NeutrinoML_r00742_s00000_ts964558.h5
+NeutrinoML_r00240_s00000_ts422016.h5  NeutrinoML_r00743_s00000_ts924124.h5
+NeutrinoML_r00241_s00000_ts437063.h5  NeutrinoML_r00745_s00000_ts220040.h5
+NeutrinoML_r00242_s00000_ts711903.h5  NeutrinoML_r00746_s00000_ts724655.h5
+NeutrinoML_r00243_s00000_ts610072.h5  NeutrinoML_r00747_s00000_ts836703.h5
+NeutrinoML_r00244_s00000_ts409747.h5  NeutrinoML_r00748_s00000_ts636207.h5
+NeutrinoML_r00245_s00000_ts416527.h5  NeutrinoML_r00749_s00000_ts867301.h5
+NeutrinoML_r00246_s00000_ts413820.h5  NeutrinoML_r00750_s00000_ts377665.h5
+NeutrinoML_r00247_s00000_ts553004.h5  NeutrinoML_r00751_s00000_ts827377.h5
+NeutrinoML_r00248_s00000_ts681877.h5  NeutrinoML_r00752_s00000_ts874327.h5
+NeutrinoML_r00249_s00000_ts661994.h5  NeutrinoML_r00753_s00000_ts686974.h5
+NeutrinoML_r00250_s00000_ts602883.h5  NeutrinoML_r00754_s00000_ts436653.h5
+NeutrinoML_r00251_s00000_ts239534.h5  NeutrinoML_r00755_s00000_ts542985.h5
+NeutrinoML_r00252_s00000_ts248876.h5  NeutrinoML_r00756_s00000_ts361064.h5
+NeutrinoML_r00253_s00000_ts236783.h5  NeutrinoML_r00757_s00000_ts151766.h5
+NeutrinoML_r00254_s00000_ts236423.h5  NeutrinoML_r00758_s00000_ts374645.h5
+NeutrinoML_r00255_s00000_ts340307.h5  NeutrinoML_r00759_s00000_ts038131.h5
+NeutrinoML_r00256_s00000_ts170020.h5  NeutrinoML_r00760_s00000_ts593536.h5
+NeutrinoML_r00257_s00000_ts786411.h5  NeutrinoML_r00761_s00000_ts534617.h5
+NeutrinoML_r00258_s00000_ts781260.h5  NeutrinoML_r00762_s00000_ts537034.h5
+NeutrinoML_r00259_s00000_ts444862.h5  NeutrinoML_r00763_s00000_ts977151.h5
+NeutrinoML_r00260_s00000_ts428331.h5  NeutrinoML_r00764_s00000_ts760066.h5
+NeutrinoML_r00261_s00000_ts424927.h5  NeutrinoML_r00765_s00000_ts138275.h5
+NeutrinoML_r00262_s00000_ts508922.h5  NeutrinoML_r00766_s00000_ts455386.h5
+NeutrinoML_r00263_s00000_ts405396.h5  NeutrinoML_r00767_s00000_ts451096.h5
+NeutrinoML_r00264_s00000_ts639503.h5  NeutrinoML_r00768_s00000_ts443965.h5
+NeutrinoML_r00265_s00000_ts675911.h5  NeutrinoML_r00769_s00000_ts611337.h5
+NeutrinoML_r00266_s00000_ts097643.h5  NeutrinoML_r00770_s00000_ts489300.h5
+NeutrinoML_r00267_s00000_ts926730.h5  NeutrinoML_r00771_s00000_ts553390.h5
+NeutrinoML_r00268_s00000_ts051119.h5  NeutrinoML_r00772_s00000_ts821005.h5
+NeutrinoML_r00269_s00000_ts970810.h5  NeutrinoML_r00773_s00000_ts895935.h5
+NeutrinoML_r00270_s00000_ts376024.h5  NeutrinoML_r00774_s00000_ts724381.h5
+NeutrinoML_r00271_s00000_ts506331.h5  NeutrinoML_r00775_s00000_ts726102.h5
+NeutrinoML_r00272_s00000_ts842461.h5  NeutrinoML_r00776_s00000_ts618341.h5
+NeutrinoML_r00273_s00000_ts947483.h5  NeutrinoML_r00777_s00000_ts617911.h5
+NeutrinoML_r00274_s00000_ts908601.h5  NeutrinoML_r00778_s00000_ts649596.h5
+NeutrinoML_r00275_s00000_ts855368.h5  NeutrinoML_r00779_s00000_ts687220.h5
+NeutrinoML_r00276_s00000_ts780893.h5  NeutrinoML_r00780_s00000_ts706406.h5
+NeutrinoML_r00277_s00000_ts842249.h5  NeutrinoML_r00781_s00000_ts358333.h5
+NeutrinoML_r00278_s00000_ts774413.h5  NeutrinoML_r00782_s00000_ts115315.h5
+NeutrinoML_r00279_s00000_ts757603.h5  NeutrinoML_r00783_s00000_ts398951.h5
+NeutrinoML_r00280_s00000_ts120458.h5  NeutrinoML_r00784_s00000_ts690599.h5
+NeutrinoML_r00281_s00000_ts909612.h5  NeutrinoML_r00786_s00000_ts952774.h5
+NeutrinoML_r00282_s00000_ts258521.h5  NeutrinoML_r00787_s00000_ts035307.h5
+NeutrinoML_r00283_s00000_ts293183.h5  NeutrinoML_r00788_s00000_ts271391.h5
+NeutrinoML_r00284_s00000_ts833639.h5  NeutrinoML_r00789_s00000_ts320209.h5
+NeutrinoML_r00285_s00000_ts160876.h5  NeutrinoML_r00790_s00000_ts876377.h5
+NeutrinoML_r00286_s00000_ts488669.h5  NeutrinoML_r00791_s00000_ts364013.h5
+NeutrinoML_r00287_s00000_ts017005.h5  NeutrinoML_r00792_s00000_ts492090.h5
+NeutrinoML_r00288_s00000_ts561734.h5  NeutrinoML_r00793_s00000_ts809035.h5
+NeutrinoML_r00289_s00000_ts296491.h5  NeutrinoML_r00794_s00000_ts969446.h5
+NeutrinoML_r00290_s00000_ts310399.h5  NeutrinoML_r00795_s00000_ts281621.h5
+NeutrinoML_r00291_s00000_ts142300.h5  NeutrinoML_r00796_s00000_ts769368.h5
+NeutrinoML_r00292_s00000_ts375480.h5  NeutrinoML_r00797_s00000_ts216808.h5
+NeutrinoML_r00293_s00000_ts973414.h5  NeutrinoML_r00798_s00000_ts259383.h5
+NeutrinoML_r00294_s00000_ts058523.h5  NeutrinoML_r00799_s00000_ts331624.h5
+NeutrinoML_r00295_s00000_ts451637.h5  NeutrinoML_r00800_s00000_ts180664.h5
+NeutrinoML_r00296_s00000_ts278343.h5  NeutrinoML_r00801_s00000_ts285928.h5
+NeutrinoML_r00297_s00000_ts714053.h5  NeutrinoML_r00802_s00000_ts584393.h5
+NeutrinoML_r00298_s00000_ts789309.h5  NeutrinoML_r00803_s00000_ts585183.h5
+NeutrinoML_r00299_s00000_ts983578.h5  NeutrinoML_r00804_s00000_ts197190.h5
+NeutrinoML_r00300_s00000_ts994515.h5  NeutrinoML_r00805_s00000_ts077531.h5
+NeutrinoML_r00301_s00000_ts720392.h5  NeutrinoML_r00806_s00000_ts760825.h5
+NeutrinoML_r00302_s00000_ts032830.h5  NeutrinoML_r00807_s00000_ts720487.h5
+NeutrinoML_r00303_s00000_ts698781.h5  NeutrinoML_r00808_s00000_ts082326.h5
+NeutrinoML_r00304_s00000_ts995171.h5  NeutrinoML_r00809_s00000_ts239450.h5
+NeutrinoML_r00305_s00000_ts206281.h5  NeutrinoML_r00810_s00000_ts576686.h5
+NeutrinoML_r00306_s00000_ts674477.h5  NeutrinoML_r00811_s00000_ts548135.h5
+NeutrinoML_r00307_s00000_ts450528.h5  NeutrinoML_r00812_s00000_ts884206.h5
+NeutrinoML_r00309_s00000_ts924759.h5  NeutrinoML_r00813_s00000_ts889846.h5
+NeutrinoML_r00310_s00000_ts189956.h5  NeutrinoML_r00814_s00000_ts504748.h5
+NeutrinoML_r00311_s00000_ts506928.h5  NeutrinoML_r00815_s00000_ts045522.h5
+NeutrinoML_r00312_s00000_ts183198.h5  NeutrinoML_r00816_s00000_ts072617.h5
+NeutrinoML_r00313_s00000_ts332976.h5  NeutrinoML_r00817_s00000_ts325367.h5
+NeutrinoML_r00314_s00000_ts161302.h5  NeutrinoML_r00818_s00000_ts874654.h5
+NeutrinoML_r00315_s00000_ts804959.h5  NeutrinoML_r00819_s00000_ts829821.h5
+NeutrinoML_r00316_s00000_ts458578.h5  NeutrinoML_r00820_s00000_ts511500.h5
+NeutrinoML_r00317_s00000_ts558525.h5  NeutrinoML_r00821_s00000_ts587975.h5
+NeutrinoML_r00318_s00000_ts493108.h5  NeutrinoML_r00822_s00000_ts461793.h5
+NeutrinoML_r00319_s00000_ts087283.h5  NeutrinoML_r00823_s00000_ts995765.h5
+NeutrinoML_r00320_s00000_ts796603.h5  NeutrinoML_r00824_s00000_ts164703.h5
+NeutrinoML_r00321_s00000_ts813356.h5  NeutrinoML_r00825_s00000_ts335479.h5
+NeutrinoML_r00322_s00000_ts833683.h5  NeutrinoML_r00826_s00000_ts509915.h5
+NeutrinoML_r00323_s00000_ts019602.h5  NeutrinoML_r00827_s00000_ts876189.h5
+NeutrinoML_r00324_s00000_ts843217.h5  NeutrinoML_r00828_s00000_ts561371.h5
+NeutrinoML_r00325_s00000_ts329078.h5  NeutrinoML_r00829_s00000_ts895892.h5
+NeutrinoML_r00326_s00000_ts905580.h5  NeutrinoML_r00830_s00000_ts853100.h5
+NeutrinoML_r00327_s00000_ts298860.h5  NeutrinoML_r00831_s00000_ts734184.h5
+NeutrinoML_r00328_s00000_ts183003.h5  NeutrinoML_r00832_s00000_ts195728.h5
+NeutrinoML_r00329_s00000_ts757505.h5  NeutrinoML_r00833_s00000_ts357538.h5
+NeutrinoML_r00330_s00000_ts428970.h5  NeutrinoML_r00834_s00000_ts523324.h5
+NeutrinoML_r00331_s00000_ts459360.h5  NeutrinoML_r00835_s00000_ts639644.h5
+NeutrinoML_r00332_s00000_ts521764.h5  NeutrinoML_r00836_s00000_ts454774.h5
+NeutrinoML_r00333_s00000_ts617999.h5  NeutrinoML_r00837_s00000_ts757723.h5
+NeutrinoML_r00334_s00000_ts844487.h5  NeutrinoML_r00838_s00000_ts731572.h5
+NeutrinoML_r00335_s00000_ts374342.h5  NeutrinoML_r00839_s00000_ts322382.h5
+NeutrinoML_r00336_s00000_ts448641.h5  NeutrinoML_r00840_s00000_ts885257.h5
+NeutrinoML_r00337_s00000_ts961506.h5  NeutrinoML_r00841_s00000_ts586041.h5
+NeutrinoML_r00338_s00000_ts458910.h5  NeutrinoML_r00842_s00000_ts781280.h5
+NeutrinoML_r00339_s00000_ts458643.h5  NeutrinoML_r00843_s00000_ts664725.h5
+NeutrinoML_r00340_s00000_ts764532.h5  NeutrinoML_r00844_s00000_ts093520.h5
+NeutrinoML_r00341_s00000_ts373514.h5  NeutrinoML_r00845_s00000_ts355831.h5
+NeutrinoML_r00342_s00000_ts396431.h5  NeutrinoML_r00846_s00000_ts344068.h5
+NeutrinoML_r00343_s00000_ts375599.h5  NeutrinoML_r00847_s00000_ts931950.h5
+NeutrinoML_r00344_s00000_ts383041.h5  NeutrinoML_r00848_s00000_ts935297.h5
+NeutrinoML_r00345_s00000_ts379292.h5  NeutrinoML_r00849_s00000_ts406539.h5
+NeutrinoML_r00346_s00000_ts693695.h5  NeutrinoML_r00850_s00000_ts834061.h5
+NeutrinoML_r00347_s00000_ts407117.h5  NeutrinoML_r00851_s00000_ts765811.h5
+NeutrinoML_r00348_s00000_ts441482.h5  NeutrinoML_r00852_s00000_ts760556.h5
+NeutrinoML_r00349_s00000_ts305463.h5  NeutrinoML_r00853_s00000_ts571581.h5
+NeutrinoML_r00350_s00000_ts331163.h5  NeutrinoML_r00854_s00000_ts597601.h5
+NeutrinoML_r00351_s00000_ts698995.h5  NeutrinoML_r00855_s00000_ts822950.h5
+NeutrinoML_r00352_s00000_ts626081.h5  NeutrinoML_r00856_s00000_ts605550.h5
+NeutrinoML_r00353_s00000_ts700108.h5  NeutrinoML_r00857_s00000_ts608094.h5
+NeutrinoML_r00354_s00000_ts445216.h5  NeutrinoML_r00858_s00000_ts724692.h5
+NeutrinoML_r00355_s00000_ts379351.h5  NeutrinoML_r00860_s00000_ts657788.h5
+NeutrinoML_r00356_s00000_ts733730.h5  NeutrinoML_r00861_s00000_ts595582.h5
+NeutrinoML_r00357_s00000_ts679976.h5  NeutrinoML_r00862_s00000_ts726748.h5
+NeutrinoML_r00358_s00000_ts779696.h5  NeutrinoML_r00863_s00000_ts479345.h5
+NeutrinoML_r00359_s00000_ts392391.h5  NeutrinoML_r00864_s00000_ts911840.h5
+NeutrinoML_r00360_s00000_ts400036.h5  NeutrinoML_r00865_s00000_ts812054.h5
+NeutrinoML_r00361_s00000_ts463348.h5  NeutrinoML_r00866_s00000_ts833608.h5
+NeutrinoML_r00362_s00000_ts599278.h5  NeutrinoML_r00867_s00000_ts952656.h5
+NeutrinoML_r00363_s00000_ts343571.h5  NeutrinoML_r00868_s00000_ts840858.h5
+NeutrinoML_r00364_s00000_ts383554.h5  NeutrinoML_r00869_s00000_ts708318.h5
+NeutrinoML_r00365_s00000_ts919309.h5  NeutrinoML_r00870_s00000_ts823647.h5
+NeutrinoML_r00366_s00000_ts425189.h5  NeutrinoML_r00871_s00000_ts234525.h5
+NeutrinoML_r00367_s00000_ts401810.h5  NeutrinoML_r00872_s00000_ts705969.h5
+NeutrinoML_r00368_s00000_ts423583.h5  NeutrinoML_r00873_s00000_ts691414.h5
+NeutrinoML_r00369_s00000_ts175385.h5  NeutrinoML_r00874_s00000_ts967366.h5
+NeutrinoML_r00370_s00000_ts445952.h5  NeutrinoML_r00875_s00000_ts197242.h5
+NeutrinoML_r00371_s00000_ts075663.h5  NeutrinoML_r00876_s00000_ts943723.h5
+NeutrinoML_r00372_s00000_ts384546.h5  NeutrinoML_r00877_s00000_ts416329.h5
+NeutrinoML_r00373_s00000_ts687636.h5  NeutrinoML_r00878_s00000_ts093640.h5
+NeutrinoML_r00374_s00000_ts336721.h5  NeutrinoML_r00879_s00000_ts001811.h5
+NeutrinoML_r00375_s00000_ts676256.h5  NeutrinoML_r00880_s00000_ts886736.h5
+NeutrinoML_r00376_s00000_ts136062.h5  NeutrinoML_r00881_s00000_ts477808.h5
+NeutrinoML_r00378_s00000_ts840152.h5  NeutrinoML_r00882_s00000_ts124949.h5
+NeutrinoML_r00379_s00000_ts850025.h5  NeutrinoML_r00883_s00000_ts616608.h5
+NeutrinoML_r00380_s00000_ts607224.h5  NeutrinoML_r00884_s00000_ts050768.h5
+NeutrinoML_r00381_s00000_ts569382.h5  NeutrinoML_r00885_s00000_ts572120.h5
+NeutrinoML_r00382_s00000_ts879081.h5  NeutrinoML_r00886_s00000_ts566784.h5
+NeutrinoML_r00383_s00000_ts556040.h5  NeutrinoML_r00887_s00000_ts562058.h5
+NeutrinoML_r00384_s00000_ts785348.h5  NeutrinoML_r00888_s00000_ts498560.h5
+NeutrinoML_r00385_s00000_ts650152.h5  NeutrinoML_r00889_s00000_ts792913.h5
+NeutrinoML_r00386_s00000_ts265262.h5  NeutrinoML_r00890_s00000_ts043336.h5
+NeutrinoML_r00387_s00000_ts420003.h5  NeutrinoML_r00891_s00000_ts346486.h5
+NeutrinoML_r00388_s00000_ts144432.h5  NeutrinoML_r00892_s00000_ts666248.h5
+NeutrinoML_r00389_s00000_ts495974.h5  NeutrinoML_r00893_s00000_ts076616.h5
+NeutrinoML_r00390_s00000_ts584322.h5  NeutrinoML_r00895_s00000_ts567773.h5
+NeutrinoML_r00391_s00000_ts268161.h5  NeutrinoML_r00896_s00000_ts294793.h5
+NeutrinoML_r00392_s00000_ts368781.h5  NeutrinoML_r00897_s00000_ts923939.h5
+NeutrinoML_r00393_s00000_ts257895.h5  NeutrinoML_r00898_s00000_ts857215.h5
+NeutrinoML_r00394_s00000_ts710028.h5  NeutrinoML_r00899_s00000_ts737770.h5
+NeutrinoML_r00395_s00000_ts131150.h5  NeutrinoML_r00900_s00000_ts732982.h5
+NeutrinoML_r00396_s00000_ts218394.h5  NeutrinoML_r00901_s00000_ts664292.h5
+NeutrinoML_r00397_s00000_ts251705.h5  NeutrinoML_r00902_s00000_ts789221.h5
+NeutrinoML_r00398_s00000_ts247841.h5  NeutrinoML_r00903_s00000_ts662949.h5
+NeutrinoML_r00399_s00000_ts727271.h5  NeutrinoML_r00904_s00000_ts676392.h5
+NeutrinoML_r00400_s00000_ts703470.h5  NeutrinoML_r00905_s00000_ts599185.h5
+NeutrinoML_r00401_s00000_ts725280.h5  NeutrinoML_r00906_s00000_ts887104.h5
+NeutrinoML_r00402_s00000_ts750469.h5  NeutrinoML_r00907_s00000_ts373285.h5
+NeutrinoML_r00403_s00000_ts245884.h5  NeutrinoML_r00908_s00000_ts178088.h5
+NeutrinoML_r00404_s00000_ts193587.h5  NeutrinoML_r00909_s00000_ts424489.h5
+NeutrinoML_r00405_s00000_ts530853.h5  NeutrinoML_r00910_s00000_ts841387.h5
+NeutrinoML_r00406_s00000_ts516217.h5  NeutrinoML_r00911_s00000_ts941787.h5
+NeutrinoML_r00407_s00000_ts911473.h5  NeutrinoML_r00912_s00000_ts537386.h5
+NeutrinoML_r00408_s00000_ts485364.h5  NeutrinoML_r00913_s00000_ts467206.h5
+NeutrinoML_r00410_s00000_ts053057.h5  NeutrinoML_r00914_s00000_ts410241.h5
+NeutrinoML_r00411_s00000_ts686487.h5  NeutrinoML_r00915_s00000_ts442846.h5
+NeutrinoML_r00412_s00000_ts770349.h5  NeutrinoML_r00916_s00000_ts040371.h5
+NeutrinoML_r00413_s00000_ts062040.h5  NeutrinoML_r00917_s00000_ts575365.h5
+NeutrinoML_r00414_s00000_ts845674.h5  NeutrinoML_r00918_s00000_ts580318.h5
+NeutrinoML_r00415_s00000_ts560174.h5  NeutrinoML_r00919_s00000_ts644025.h5
+NeutrinoML_r00416_s00000_ts120336.h5  NeutrinoML_r00920_s00000_ts630079.h5
+NeutrinoML_r00417_s00000_ts591830.h5  NeutrinoML_r00921_s00000_ts626440.h5
+NeutrinoML_r00418_s00000_ts815939.h5  NeutrinoML_r00922_s00000_ts636481.h5
+NeutrinoML_r00419_s00000_ts725106.h5  NeutrinoML_r00923_s00000_ts519481.h5
+NeutrinoML_r00420_s00000_ts486987.h5  NeutrinoML_r00924_s00000_ts712342.h5
+NeutrinoML_r00421_s00000_ts348890.h5  NeutrinoML_r00925_s00000_ts676836.h5
+NeutrinoML_r00422_s00000_ts031909.h5  NeutrinoML_r00926_s00000_ts640279.h5
+NeutrinoML_r00423_s00000_ts670488.h5  NeutrinoML_r00927_s00000_ts688743.h5
+NeutrinoML_r00424_s00000_ts752067.h5  NeutrinoML_r00928_s00000_ts022443.h5
+NeutrinoML_r00425_s00000_ts310549.h5  NeutrinoML_r00929_s00000_ts656979.h5
+NeutrinoML_r00426_s00000_ts205032.h5  NeutrinoML_r00930_s00000_ts356325.h5
+NeutrinoML_r00427_s00000_ts341901.h5  NeutrinoML_r00931_s00000_ts472773.h5
+NeutrinoML_r00428_s00000_ts603871.h5  NeutrinoML_r00933_s00000_ts312658.h5
+NeutrinoML_r00429_s00000_ts414384.h5  NeutrinoML_r00934_s00000_ts354348.h5
+NeutrinoML_r00430_s00000_ts732610.h5  NeutrinoML_r00935_s00000_ts593988.h5
+NeutrinoML_r00431_s00000_ts658889.h5  NeutrinoML_r00936_s00000_ts445159.h5
+NeutrinoML_r00432_s00000_ts675742.h5  NeutrinoML_r00937_s00000_ts069805.h5
+NeutrinoML_r00433_s00000_ts497955.h5  NeutrinoML_r00938_s00000_ts687515.h5
+NeutrinoML_r00434_s00000_ts600047.h5  NeutrinoML_r00939_s00000_ts696283.h5
+NeutrinoML_r00435_s00000_ts061399.h5  NeutrinoML_r00940_s00000_ts861788.h5
+NeutrinoML_r00436_s00000_ts740245.h5  NeutrinoML_r00941_s00000_ts277957.h5
+NeutrinoML_r00437_s00000_ts676362.h5  NeutrinoML_r00942_s00000_ts272060.h5
+NeutrinoML_r00439_s00000_ts834137.h5  NeutrinoML_r00943_s00000_ts859134.h5
+NeutrinoML_r00440_s00000_ts989671.h5  NeutrinoML_r00944_s00000_ts164644.h5
+NeutrinoML_r00441_s00000_ts128288.h5  NeutrinoML_r00945_s00000_ts599485.h5
+NeutrinoML_r00442_s00000_ts811704.h5  NeutrinoML_r00946_s00000_ts350626.h5
+NeutrinoML_r00443_s00000_ts572467.h5  NeutrinoML_r00947_s00000_ts224487.h5
+NeutrinoML_r00444_s00000_ts169912.h5  NeutrinoML_r00948_s00000_ts226749.h5
+NeutrinoML_r00445_s00000_ts311438.h5  NeutrinoML_r00949_s00000_ts457109.h5
+NeutrinoML_r00446_s00000_ts576140.h5  NeutrinoML_r00950_s00000_ts144662.h5
+NeutrinoML_r00447_s00000_ts425770.h5  NeutrinoML_r00951_s00000_ts059577.h5
+NeutrinoML_r00448_s00000_ts843112.h5  NeutrinoML_r00952_s00000_ts644860.h5
+NeutrinoML_r00449_s00000_ts932698.h5  NeutrinoML_r00953_s00000_ts615690.h5
+NeutrinoML_r00450_s00000_ts505097.h5  NeutrinoML_r00954_s00000_ts406607.h5
+NeutrinoML_r00451_s00000_ts768340.h5  NeutrinoML_r00955_s00000_ts188853.h5
+NeutrinoML_r00452_s00000_ts652355.h5  NeutrinoML_r00956_s00000_ts336165.h5
+NeutrinoML_r00453_s00000_ts417847.h5  NeutrinoML_r00957_s00000_ts765564.h5
+NeutrinoML_r00454_s00000_ts256857.h5  NeutrinoML_r00958_s00000_ts832584.h5
+NeutrinoML_r00455_s00000_ts025654.h5  NeutrinoML_r00959_s00000_ts172773.h5
+NeutrinoML_r00456_s00000_ts786830.h5  NeutrinoML_r00960_s00000_ts599277.h5
+NeutrinoML_r00457_s00000_ts033780.h5  NeutrinoML_r00961_s00000_ts165595.h5
+NeutrinoML_r00458_s00000_ts931142.h5  NeutrinoML_r00962_s00000_ts092076.h5
+NeutrinoML_r00459_s00000_ts676685.h5  NeutrinoML_r00963_s00000_ts461787.h5
+NeutrinoML_r00460_s00000_ts035097.h5  NeutrinoML_r00964_s00000_ts497852.h5
+NeutrinoML_r00461_s00000_ts670911.h5  NeutrinoML_r00965_s00000_ts820766.h5
+NeutrinoML_r00462_s00000_ts689058.h5  NeutrinoML_r00966_s00000_ts910205.h5
+NeutrinoML_r00463_s00000_ts108677.h5  NeutrinoML_r00967_s00000_ts031475.h5
+NeutrinoML_r00464_s00000_ts604323.h5  NeutrinoML_r00968_s00000_ts105205.h5
+NeutrinoML_r00465_s00000_ts409011.h5  NeutrinoML_r00969_s00000_ts258331.h5
+NeutrinoML_r00466_s00000_ts539953.h5  NeutrinoML_r00970_s00000_ts169497.h5
+NeutrinoML_r00467_s00000_ts378787.h5  NeutrinoML_r00971_s00000_ts106965.h5
+NeutrinoML_r00468_s00000_ts574509.h5  NeutrinoML_r00972_s00000_ts377534.h5
+NeutrinoML_r00469_s00000_ts941745.h5  NeutrinoML_r00973_s00000_ts615263.h5
+NeutrinoML_r00470_s00000_ts679573.h5  NeutrinoML_r00974_s00000_ts067334.h5
+NeutrinoML_r00471_s00000_ts892520.h5  NeutrinoML_r00975_s00000_ts170530.h5
+NeutrinoML_r00472_s00000_ts953590.h5  NeutrinoML_r00976_s00000_ts516259.h5
+NeutrinoML_r00473_s00000_ts774671.h5  NeutrinoML_r00977_s00000_ts807173.h5
+NeutrinoML_r00474_s00000_ts708025.h5  NeutrinoML_r00978_s00000_ts409178.h5
+NeutrinoML_r00475_s00000_ts094319.h5  NeutrinoML_r00979_s00000_ts161122.h5
+NeutrinoML_r00476_s00000_ts953602.h5  NeutrinoML_r00980_s00000_ts276665.h5
+NeutrinoML_r00477_s00000_ts516309.h5  NeutrinoML_r00981_s00000_ts694615.h5
+NeutrinoML_r00478_s00000_ts712328.h5  NeutrinoML_r00982_s00000_ts904169.h5
+NeutrinoML_r00479_s00000_ts226186.h5  NeutrinoML_r00983_s00000_ts538828.h5
+NeutrinoML_r00480_s00000_ts557296.h5  NeutrinoML_r00984_s00000_ts295682.h5
+NeutrinoML_r00481_s00000_ts895779.h5  NeutrinoML_r00985_s00000_ts401509.h5
+NeutrinoML_r00482_s00000_ts587012.h5  NeutrinoML_r00986_s00000_ts725391.h5
+NeutrinoML_r00483_s00000_ts974635.h5  NeutrinoML_r00987_s00000_ts063596.h5
+NeutrinoML_r00484_s00000_ts822151.h5  NeutrinoML_r00988_s00000_ts676014.h5
+NeutrinoML_r00485_s00000_ts154222.h5  NeutrinoML_r00989_s00000_ts273557.h5
+NeutrinoML_r00486_s00000_ts171839.h5  NeutrinoML_r00990_s00000_ts641835.h5
+NeutrinoML_r00487_s00000_ts876314.h5  NeutrinoML_r00991_s00000_ts651788.h5
+NeutrinoML_r00488_s00000_ts220123.h5  NeutrinoML_r00992_s00000_ts693931.h5
+NeutrinoML_r00489_s00000_ts447518.h5  NeutrinoML_r00993_s00000_ts734332.h5
+NeutrinoML_r00490_s00000_ts788309.h5  NeutrinoML_r00994_s00000_ts707164.h5
+NeutrinoML_r00491_s00000_ts993531.h5  NeutrinoML_r00995_s00000_ts652411.h5
+NeutrinoML_r00492_s00000_ts945991.h5  NeutrinoML_r00996_s00000_ts967926.h5
+NeutrinoML_r00493_s00000_ts362590.h5  NeutrinoML_r00997_s00000_ts876565.h5
+NeutrinoML_r00494_s00000_ts542626.h5  NeutrinoML_r00998_s00000_ts896166.h5
+NeutrinoML_r00495_s00000_ts533146.h5  NeutrinoML_r00999_s00000_ts825722.h5
+NeutrinoML_r00496_s00000_ts596770.h5  NeutrinoML_r01000_s00000_ts896185.h5
+NeutrinoML_r00497_s00000_ts458288.h5  debug.log
+NeutrinoML_r00498_s00000_ts443381.h5  [0m[01;34mhdf5_proc[0m
+NeutrinoML_r00499_s00000_ts098934.h5  [01;34mlogs[0m
+NeutrinoML_r00500_s00000_ts411869.h5  reco_hist.root
+NeutrinoML_r00501_s00000_ts477622.h5
+]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/TauCC_250_1000/hdf5[?2004h[amarinei@login1 hdf5]$ pwd
+[?2004l/scratch/amarinei/data/Atmospherics/TauCC_250_1000/hdf5
+]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/TauCC_250_1000/hdf5[?2004h[amarinei@login1 hdf5]$ cd ../../C[KECC_250_1000/hdf5/
+[?2004l]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/ECC_250_1000/hdf5[?2004h[amarinei@login1 hdf5]$ pwd
+[?2004l/scratch/amarinei/data/Atmospherics/ECC_250_1000/hdf5
+]0;amarinei@login1:/scratch/amarinei/data/Atmospherics/ECC_250_1000/hdf5[?2004h[amarinei@login1 hdf5]$ ls
+[?2004lNeutrinoML_r00001_s00000_ts403396.h5  NeutrinoML_r00502_s00000_ts787793.h5
+NeutrinoML_r00002_s00000_ts500196.h5  NeutrinoML_r00503_s00000_ts698637.h5
+NeutrinoML_r00003_s00000_ts156983.h5  NeutrinoML_r00504_s00000_ts656546.h5
+NeutrinoML_r00004_s00000_ts194790.h5  NeutrinoML_r00505_s00000_ts602871.h5
+NeutrinoML_r00005_s00000_ts128328.h5  NeutrinoML_r00506_s00000_ts642474.h5
+NeutrinoML_r00006_s00000_ts271452.h5  NeutrinoML_r00507_s00000_ts613897.h5
+NeutrinoML_r00007_s00000_ts219915.h5  NeutrinoML_r00508_s00000_ts605869.h5
+NeutrinoML_r00008_s00000_ts692278.h5  NeutrinoML_r00509_s00000_ts607085.h5
+NeutrinoML_r00009_s00000_ts819940.h5  NeutrinoML_r00510_s00000_ts580907.h5
+NeutrinoML_r00010_s00000_ts905938.h5  NeutrinoML_r00511_s00000_ts604775.h5
+NeutrinoML_r00011_s00000_ts142382.h5  NeutrinoML_r00512_s00000_ts595681.h5
+NeutrinoML_r00012_s00000_ts142614.h5  NeutrinoML_r00513_s00000_ts585021.h5
+NeutrinoML_r00013_s00000_ts694828.h5  NeutrinoML_r00514_s00000_ts620766.h5
+NeutrinoML_r00014_s00000_ts675620.h5  NeutrinoML_r00515_s00000_ts624600.h5
+NeutrinoML_r00015_s00000_ts338331.h5  NeutrinoML_r00516_s00000_ts580485.h5
+NeutrinoML_r00016_s00000_ts404638.h5  NeutrinoML_r00517_s00000_ts582090.h5
+NeutrinoML_r00017_s00000_ts153213.h5  NeutrinoML_r00518_s00000_ts592293.h5
+NeutrinoML_r00018_s00000_ts198905.h5  NeutrinoML_r00519_s00000_ts324242.h5
+NeutrinoML_r00019_s00000_ts434757.h5  NeutrinoML_r00520_s00000_ts274164.h5
+NeutrinoML_r00020_s00000_ts468865.h5  NeutrinoML_r00521_s00000_ts148050.h5
+NeutrinoML_r00021_s00000_ts672824.h5  NeutrinoML_r00522_s00000_ts153918.h5
+NeutrinoML_r00022_s00000_ts306029.h5  NeutrinoML_r00523_s00000_ts017530.h5
+NeutrinoML_r00023_s00000_ts857580.h5  NeutrinoML_r00524_s00000_ts031126.h5
+NeutrinoML_r00024_s00000_ts143682.h5  NeutrinoML_r00525_s00000_ts046540.h5
+NeutrinoML_r00025_s00000_ts930716.h5  NeutrinoML_r00526_s00000_ts061886.h5
+NeutrinoML_r00026_s00000_ts967313.h5  NeutrinoML_r00527_s00000_ts025204.h5
+NeutrinoML_r00027_s00000_ts960353.h5  NeutrinoML_r00528_s00000_ts069931.h5
+NeutrinoML_r00028_s00000_ts415760.h5  NeutrinoML_r00529_s00000_ts021025.h5
+NeutrinoML_r00029_s00000_ts452282.h5  NeutrinoML_r00530_s00000_ts121537.h5
+NeutrinoML_r00030_s00000_ts491598.h5  NeutrinoML_r00531_s00000_ts110105.h5
+NeutrinoML_r00031_s00000_ts891303.h5  NeutrinoML_r00532_s00000_ts074544.h5
+NeutrinoML_r00032_s00000_ts849858.h5  NeutrinoML_r00533_s00000_ts100743.h5
+NeutrinoML_r00033_s00000_ts991985.h5  NeutrinoML_r00534_s00000_ts175959.h5
+NeutrinoML_r00034_s00000_ts918412.h5  NeutrinoML_r00535_s00000_ts131414.h5
+NeutrinoML_r00035_s00000_ts308779.h5  NeutrinoML_r00536_s00000_ts102697.h5
+NeutrinoML_r00036_s00000_ts307349.h5  NeutrinoML_r00537_s00000_ts203605.h5
+NeutrinoML_r00037_s00000_ts842733.h5  NeutrinoML_r00538_s00000_ts119677.h5
+NeutrinoML_r00038_s00000_ts365687.h5  NeutrinoML_r00539_s00000_ts380699.h5
+NeutrinoML_r00039_s00000_ts851433.h5  NeutrinoML_r00540_s00000_ts372180.h5
+NeutrinoML_r00040_s00000_ts879543.h5  NeutrinoML_r00541_s00000_ts339648.h5
+NeutrinoML_r00041_s00000_ts921661.h5  NeutrinoML_r00542_s00000_ts374355.h5
+NeutrinoML_r00042_s00000_ts875631.h5  NeutrinoML_r00543_s00000_ts298672.h5
+NeutrinoML_r00043_s00000_ts925483.h5  NeutrinoML_r00544_s00000_ts384255.h5
+NeutrinoML_r00044_s00000_ts916376.h5  NeutrinoML_r00545_s00000_ts322635.h5
+NeutrinoML_r00045_s00000_ts871552.h5  NeutrinoML_r00546_s00000_ts313709.h5
+NeutrinoML_r00046_s00000_ts879283.h5  NeutrinoML_r00547_s00000_ts343912.h5
+NeutrinoML_r00047_s00000_ts023591.h5  NeutrinoML_r00548_s00000_ts314994.h5
+NeutrinoML_r00048_s00000_ts121608.h5  NeutrinoML_r00549_s00000_ts675208.h5
+NeutrinoML_r00049_s00000_ts025826.h5  NeutrinoML_r00550_s00000_ts307533.h5
+NeutrinoML_r00050_s00000_ts154334.h5  NeutrinoML_r00551_s00000_ts318127.h5
+NeutrinoML_r00051_s00000_ts042254.h5  NeutrinoML_r00552_s00000_ts325382.h5
+NeutrinoML_r00052_s00000_ts560986.h5  NeutrinoML_r00553_s00000_ts303435.h5
+NeutrinoML_r00053_s00000_ts913137.h5  NeutrinoML_r00554_s00000_ts317211.h5
+NeutrinoML_r00054_s00000_ts554660.h5  NeutrinoML_r00555_s00000_ts310629.h5
+NeutrinoML_r00055_s00000_ts570495.h5  NeutrinoML_r00556_s00000_ts343129.h5
+NeutrinoML_r00056_s00000_ts586362.h5  NeutrinoML_r00557_s00000_ts284789.h5
+NeutrinoML_r00057_s00000_ts624974.h5  NeutrinoML_r00558_s00000_ts947621.h5
+NeutrinoML_r00058_s00000_ts600462.h5  NeutrinoML_r00559_s00000_ts479829.h5
+NeutrinoML_r00059_s00000_ts198663.h5  NeutrinoML_r00560_s00000_ts716533.h5
+NeutrinoML_r00060_s00000_ts845633.h5  NeutrinoML_r00561_s00000_ts488374.h5
+NeutrinoML_r00061_s00000_ts723589.h5  NeutrinoML_r00562_s00000_ts478646.h5
+NeutrinoML_r00062_s00000_ts986052.h5  NeutrinoML_r00563_s00000_ts451622.h5
+NeutrinoML_r00063_s00000_ts947548.h5  NeutrinoML_r00564_s00000_ts470580.h5
+NeutrinoML_r00064_s00000_ts977140.h5  NeutrinoML_r00565_s00000_ts455380.h5
+NeutrinoML_r00065_s00000_ts867689.h5  NeutrinoML_r00566_s00000_ts467799.h5
+NeutrinoML_r00066_s00000_ts137484.h5  NeutrinoML_r00567_s00000_ts616466.h5
+NeutrinoML_r00067_s00000_ts947828.h5  NeutrinoML_r00568_s00000_ts541429.h5
+NeutrinoML_r00068_s00000_ts818152.h5  NeutrinoML_r00569_s00000_ts503573.h5
+NeutrinoML_r00069_s00000_ts402978.h5  NeutrinoML_r00570_s00000_ts578954.h5
+NeutrinoML_r00070_s00000_ts171234.h5  NeutrinoML_r00571_s00000_ts471400.h5
+NeutrinoML_r00071_s00000_ts857088.h5  NeutrinoML_r00572_s00000_ts473778.h5
+NeutrinoML_r00072_s00000_ts585821.h5  NeutrinoML_r00573_s00000_ts477994.h5
+NeutrinoML_r00073_s00000_ts548725.h5  NeutrinoML_r00574_s00000_ts462810.h5
+NeutrinoML_r00074_s00000_ts903221.h5  NeutrinoML_r00575_s00000_ts461963.h5
+NeutrinoML_r00075_s00000_ts545048.h5  NeutrinoML_r00576_s00000_ts466570.h5
+NeutrinoML_r00076_s00000_ts971672.h5  NeutrinoML_r00577_s00000_ts464801.h5
+NeutrinoML_r00077_s00000_ts944094.h5  NeutrinoML_r00578_s00000_ts052261.h5
+NeutrinoML_r00078_s00000_ts806329.h5  NeutrinoML_r00579_s00000_ts090663.h5
+NeutrinoML_r00079_s00000_ts927379.h5  NeutrinoML_r00580_s00000_ts085277.h5
+NeutrinoML_r00080_s00000_ts189319.h5  NeutrinoML_r00581_s00000_ts975466.h5
+NeutrinoML_r00081_s00000_ts168942.h5  NeutrinoML_r00582_s00000_ts105311.h5
+NeutrinoML_r00082_s00000_ts183522.h5  NeutrinoML_r00583_s00000_ts427209.h5
+NeutrinoML_r00083_s00000_ts174711.h5  NeutrinoML_r00584_s00000_ts390847.h5
+NeutrinoML_r00084_s00000_ts177748.h5  NeutrinoML_r00585_s00000_ts643267.h5
+NeutrinoML_r00085_s00000_ts269857.h5  NeutrinoML_r00586_s00000_ts685373.h5
+NeutrinoML_r00086_s00000_ts184168.h5  NeutrinoML_r00587_s00000_ts992052.h5
+NeutrinoML_r00087_s00000_ts497693.h5  NeutrinoML_r00588_s00000_ts808634.h5
+NeutrinoML_r00088_s00000_ts664824.h5  NeutrinoML_r00589_s00000_ts043627.h5
+NeutrinoML_r00089_s00000_ts394075.h5  NeutrinoML_r00590_s00000_ts454891.h5
+NeutrinoML_r00090_s00000_ts060518.h5  NeutrinoML_r00592_s00000_ts851522.h5
+NeutrinoML_r00091_s00000_ts698823.h5  NeutrinoML_r00593_s00000_ts100384.h5
+NeutrinoML_r00092_s00000_ts344818.h5  NeutrinoML_r00594_s00000_ts014990.h5
+NeutrinoML_r00093_s00000_ts150923.h5  NeutrinoML_r00595_s00000_ts992896.h5
+NeutrinoML_r00094_s00000_ts318674.h5  NeutrinoML_r00596_s00000_ts996599.h5
+NeutrinoML_r00095_s00000_ts519082.h5  NeutrinoML_r00597_s00000_ts116181.h5
+NeutrinoML_r00096_s00000_ts760463.h5  NeutrinoML_r00598_s00000_ts410335.h5
+NeutrinoML_r00097_s00000_ts866725.h5  NeutrinoML_r00599_s00000_ts986491.h5
+NeutrinoML_r00098_s00000_ts833475.h5  NeutrinoML_r00600_s00000_ts209995.h5
+NeutrinoML_r00099_s00000_ts656270.h5  NeutrinoML_r00601_s00000_ts528707.h5
+NeutrinoML_r00100_s00000_ts317069.h5  NeutrinoML_r00602_s00000_ts554481.h5
+NeutrinoML_r00101_s00000_ts314133.h5  NeutrinoML_r00603_s00000_ts885004.h5
+NeutrinoML_r00102_s00000_ts314027.h5  NeutrinoML_r00604_s00000_ts864832.h5
+NeutrinoML_r00103_s00000_ts294650.h5  NeutrinoML_r00605_s00000_ts050827.h5
+NeutrinoML_r00104_s00000_ts384994.h5  NeutrinoML_r00606_s00000_ts953826.h5
+NeutrinoML_r00105_s00000_ts312393.h5  NeutrinoML_r00607_s00000_ts132236.h5
+NeutrinoML_r00106_s00000_ts312573.h5  NeutrinoML_r00608_s00000_ts292985.h5
+NeutrinoML_r00107_s00000_ts447366.h5  NeutrinoML_r00609_s00000_ts282005.h5
+NeutrinoML_r00108_s00000_ts497535.h5  NeutrinoML_r00610_s00000_ts204949.h5
+NeutrinoML_r00109_s00000_ts430985.h5  NeutrinoML_r00611_s00000_ts616432.h5
+NeutrinoML_r00110_s00000_ts581453.h5  NeutrinoML_r00612_s00000_ts415257.h5
+NeutrinoML_r00111_s00000_ts601068.h5  NeutrinoML_r00613_s00000_ts934009.h5
+NeutrinoML_r00112_s00000_ts336842.h5  NeutrinoML_r00614_s00000_ts451075.h5
+NeutrinoML_r00113_s00000_ts373182.h5  NeutrinoML_r00615_s00000_ts229070.h5
+NeutrinoML_r00114_s00000_ts377567.h5  NeutrinoML_r00616_s00000_ts995512.h5
+NeutrinoML_r00115_s00000_ts397118.h5  NeutrinoML_r00617_s00000_ts374463.h5
+NeutrinoML_r00116_s00000_ts280483.h5  NeutrinoML_r00618_s00000_ts930655.h5
+NeutrinoML_r00117_s00000_ts427621.h5  NeutrinoML_r00619_s00000_ts860338.h5
+NeutrinoML_r00118_s00000_ts274067.h5  NeutrinoML_r00620_s00000_ts805214.h5
+NeutrinoML_r00119_s00000_ts503285.h5  NeutrinoML_r00621_s00000_ts809212.h5
+NeutrinoML_r00120_s00000_ts437095.h5  NeutrinoML_r00622_s00000_ts854224.h5
+NeutrinoML_r00121_s00000_ts311726.h5  NeutrinoML_r00623_s00000_ts840369.h5
+NeutrinoML_r00122_s00000_ts461934.h5  NeutrinoML_r00624_s00000_ts843808.h5
+NeutrinoML_r00123_s00000_ts278490.h5  NeutrinoML_r00625_s00000_ts798034.h5
+NeutrinoML_r00124_s00000_ts754048.h5  NeutrinoML_r00626_s00000_ts831893.h5
+NeutrinoML_r00125_s00000_ts390471.h5  NeutrinoML_r00627_s00000_ts896768.h5
+NeutrinoML_r00126_s00000_ts631202.h5  NeutrinoML_r00628_s00000_ts824035.h5
+NeutrinoML_r00127_s00000_ts911451.h5  NeutrinoML_r00629_s00000_ts802138.h5
+NeutrinoML_r00128_s00000_ts291548.h5  NeutrinoML_r00630_s00000_ts755548.h5
+NeutrinoML_r00129_s00000_ts231236.h5  NeutrinoML_r00631_s00000_ts795204.h5
+NeutrinoML_r00130_s00000_ts504076.h5  NeutrinoML_r00632_s00000_ts759093.h5
+NeutrinoML_r00131_s00000_ts423371.h5  NeutrinoML_r00633_s00000_ts841702.h5
+NeutrinoML_r00132_s00000_ts595698.h5  NeutrinoML_r00634_s00000_ts824695.h5
+NeutrinoML_r00133_s00000_ts336169.h5  NeutrinoML_r00635_s00000_ts786280.h5
+NeutrinoML_r00134_s00000_ts086116.h5  NeutrinoML_r00636_s00000_ts792188.h5
+NeutrinoML_r00135_s00000_ts850296.h5  NeutrinoML_r00637_s00000_ts807412.h5
+NeutrinoML_r00136_s00000_ts687952.h5  NeutrinoML_r00638_s00000_ts410739.h5
+NeutrinoML_r00137_s00000_ts361280.h5  NeutrinoML_r00639_s00000_ts423700.h5
+NeutrinoML_r00138_s00000_ts450850.h5  NeutrinoML_r00640_s00000_ts879579.h5
+NeutrinoML_r00139_s00000_ts372447.h5  NeutrinoML_r00641_s00000_ts920054.h5
+NeutrinoML_r00140_s00000_ts031639.h5  NeutrinoML_r00642_s00000_ts581332.h5
+NeutrinoML_r00141_s00000_ts850648.h5  NeutrinoML_r00643_s00000_ts471617.h5
+NeutrinoML_r00142_s00000_ts311627.h5  NeutrinoML_r00644_s00000_ts987542.h5
+NeutrinoML_r00143_s00000_ts111496.h5  NeutrinoML_r00645_s00000_ts104288.h5
+NeutrinoML_r00145_s00000_ts125357.h5  NeutrinoML_r00646_s00000_ts365218.h5
+NeutrinoML_r00146_s00000_ts707948.h5  NeutrinoML_r00647_s00000_ts436855.h5
+NeutrinoML_r00147_s00000_ts781926.h5  NeutrinoML_r00648_s00000_ts242831.h5
+NeutrinoML_r00148_s00000_ts561182.h5  NeutrinoML_r00649_s00000_ts563469.h5
+NeutrinoML_r00149_s00000_ts934835.h5  NeutrinoML_r00650_s00000_ts291534.h5
+NeutrinoML_r00150_s00000_ts303058.h5  NeutrinoML_r00651_s00000_ts983837.h5
+NeutrinoML_r00151_s00000_ts063481.h5  NeutrinoML_r00652_s00000_ts884115.h5
+NeutrinoML_r00152_s00000_ts566164.h5  NeutrinoML_r00653_s00000_ts477478.h5
+NeutrinoML_r00153_s00000_ts781401.h5  NeutrinoML_r00654_s00000_ts007980.h5
+NeutrinoML_r00154_s00000_ts061573.h5  NeutrinoML_r00655_s00000_ts540869.h5
+NeutrinoML_r00155_s00000_ts734405.h5  NeutrinoML_r00656_s00000_ts227839.h5
+NeutrinoML_r00156_s00000_ts961895.h5  NeutrinoML_r00657_s00000_ts505273.h5
+NeutrinoML_r00157_s00000_ts263236.h5  NeutrinoML_r00658_s00000_ts616036.h5
+NeutrinoML_r00158_s00000_ts301096.h5  NeutrinoML_r00659_s00000_ts164353.h5
+NeutrinoML_r00159_s00000_ts296361.h5  NeutrinoML_r00660_s00000_ts194484.h5
+NeutrinoML_r00160_s00000_ts430435.h5  NeutrinoML_r00661_s00000_ts158141.h5
+NeutrinoML_r00161_s00000_ts133444.h5  NeutrinoML_r00662_s00000_ts158141.h5
+NeutrinoML_r00162_s00000_ts432445.h5  NeutrinoML_r00663_s00000_ts292730.h5
+NeutrinoML_r00163_s00000_ts560333.h5  NeutrinoML_r00664_s00000_ts223101.h5
+NeutrinoML_r00164_s00000_ts532825.h5  NeutrinoML_r00665_s00000_ts236451.h5
+NeutrinoML_r00165_s00000_ts547814.h5  NeutrinoML_r00666_s00000_ts235460.h5
+NeutrinoML_r00166_s00000_ts652342.h5  NeutrinoML_r00667_s00000_ts286652.h5
+NeutrinoML_r00167_s00000_ts763723.h5  NeutrinoML_r00668_s00000_ts230043.h5
+NeutrinoML_r00168_s00000_ts261756.h5  NeutrinoML_r00669_s00000_ts420590.h5
+NeutrinoML_r00169_s00000_ts851147.h5  NeutrinoML_r00670_s00000_ts230766.h5
+NeutrinoML_r00170_s00000_ts590682.h5  NeutrinoML_r00671_s00000_ts364811.h5
+NeutrinoML_r00171_s00000_ts259737.h5  NeutrinoML_r00672_s00000_ts262785.h5
+NeutrinoML_r00172_s00000_ts470738.h5  NeutrinoML_r00673_s00000_ts307894.h5
+NeutrinoML_r00173_s00000_ts672353.h5  NeutrinoML_r00674_s00000_ts258798.h5
+NeutrinoML_r00174_s00000_ts108918.h5  NeutrinoML_r00675_s00000_ts291977.h5
+NeutrinoML_r00175_s00000_ts391388.h5  NeutrinoML_r00676_s00000_ts325837.h5
+NeutrinoML_r00176_s00000_ts625678.h5  NeutrinoML_r00677_s00000_ts313569.h5
+NeutrinoML_r00177_s00000_ts048490.h5  NeutrinoML_r00678_s00000_ts786667.h5
+NeutrinoML_r00179_s00000_ts498797.h5  NeutrinoML_r00679_s00000_ts845472.h5
+NeutrinoML_r00180_s00000_ts971533.h5  NeutrinoML_r00680_s00000_ts825243.h5
+NeutrinoML_r00181_s00000_ts084203.h5  NeutrinoML_r00681_s00000_ts840540.h5
+NeutrinoML_r00183_s00000_ts431745.h5  NeutrinoML_r00682_s00000_ts844298.h5
+NeutrinoML_r00184_s00000_ts415729.h5  NeutrinoML_r00683_s00000_ts797642.h5
+NeutrinoML_r00185_s00000_ts185989.h5  NeutrinoML_r00684_s00000_ts801530.h5
+NeutrinoML_r00186_s00000_ts668598.h5  NeutrinoML_r00685_s00000_ts840032.h5
+NeutrinoML_r00187_s00000_ts469624.h5  NeutrinoML_r00686_s00000_ts808213.h5
+NeutrinoML_r00188_s00000_ts061149.h5  NeutrinoML_r00687_s00000_ts861626.h5
+NeutrinoML_r00189_s00000_ts025884.h5  NeutrinoML_r00688_s00000_ts799426.h5
+NeutrinoML_r00190_s00000_ts555666.h5  NeutrinoML_r00689_s00000_ts081431.h5
+NeutrinoML_r00191_s00000_ts597043.h5  NeutrinoML_r00690_s00000_ts825002.h5
+NeutrinoML_r00192_s00000_ts541247.h5  NeutrinoML_r00691_s00000_ts856650.h5
+NeutrinoML_r00194_s00000_ts140879.h5  NeutrinoML_r00692_s00000_ts809715.h5
+NeutrinoML_r00195_s00000_ts216841.h5  NeutrinoML_r00693_s00000_ts882631.h5
+NeutrinoML_r00196_s00000_ts641332.h5  NeutrinoML_r00694_s00000_ts813429.h5
+NeutrinoML_r00197_s00000_ts963731.h5  NeutrinoML_r00695_s00000_ts865382.h5
+NeutrinoML_r00198_s00000_ts886219.h5  NeutrinoML_r00696_s00000_ts815858.h5
+NeutrinoML_r00199_s00000_ts370410.h5  NeutrinoML_r00697_s00000_ts809197.h5
+NeutrinoML_r00200_s00000_ts773284.h5  NeutrinoML_r00698_s00000_ts166502.h5
+NeutrinoML_r00201_s00000_ts938723.h5  NeutrinoML_r00699_s00000_ts967365.h5
+NeutrinoML_r00202_s00000_ts733789.h5  NeutrinoML_r00700_s00000_ts964855.h5
+NeutrinoML_r00203_s00000_ts087399.h5  NeutrinoML_r00701_s00000_ts992800.h5
+NeutrinoML_r00204_s00000_ts826371.h5  NeutrinoML_r00702_s00000_ts965829.h5
+NeutrinoML_r00205_s00000_ts075190.h5  NeutrinoML_r00703_s00000_ts044608.h5
+NeutrinoML_r00206_s00000_ts953356.h5  NeutrinoML_r00704_s00000_ts005573.h5
+NeutrinoML_r00207_s00000_ts921818.h5  NeutrinoML_r00705_s00000_ts000064.h5
+NeutrinoML_r00208_s00000_ts142243.h5  NeutrinoML_r00706_s00000_ts006073.h5
+NeutrinoML_r00209_s00000_ts244224.h5  NeutrinoML_r00707_s00000_ts000853.h5
+NeutrinoML_r00210_s00000_ts310063.h5  NeutrinoML_r00708_s00000_ts997714.h5
+NeutrinoML_r00211_s00000_ts712393.h5  NeutrinoML_r00709_s00000_ts103255.h5
+NeutrinoML_r00212_s00000_ts251020.h5  NeutrinoML_r00710_s00000_ts981401.h5
+NeutrinoML_r00213_s00000_ts065704.h5  NeutrinoML_r00711_s00000_ts970577.h5
+NeutrinoML_r00214_s00000_ts155277.h5  NeutrinoML_r00712_s00000_ts000591.h5
+NeutrinoML_r00215_s00000_ts978457.h5  NeutrinoML_r00713_s00000_ts007961.h5
+NeutrinoML_r00216_s00000_ts986206.h5  NeutrinoML_r00714_s00000_ts126059.h5
+NeutrinoML_r00217_s00000_ts004068.h5  NeutrinoML_r00715_s00000_ts978113.h5
+NeutrinoML_r00218_s00000_ts387418.h5  NeutrinoML_r00716_s00000_ts970734.h5
+NeutrinoML_r00219_s00000_ts600825.h5  NeutrinoML_r00717_s00000_ts981341.h5
+NeutrinoML_r00220_s00000_ts636394.h5  NeutrinoML_r00718_s00000_ts020442.h5
+NeutrinoML_r00221_s00000_ts618134.h5  NeutrinoML_r00719_s00000_ts470076.h5
+NeutrinoML_r00222_s00000_ts599043.h5  NeutrinoML_r00720_s00000_ts523760.h5
+NeutrinoML_r00223_s00000_ts604624.h5  NeutrinoML_r00721_s00000_ts508638.h5
+NeutrinoML_r00224_s00000_ts695215.h5  NeutrinoML_r00722_s00000_ts548315.h5
+NeutrinoML_r00225_s00000_ts625153.h5  NeutrinoML_r00723_s00000_ts479160.h5
+NeutrinoML_r00226_s00000_ts725515.h5  NeutrinoML_r00724_s00000_ts440068.h5
+NeutrinoML_r00227_s00000_ts722679.h5  NeutrinoML_r00725_s00000_ts478038.h5
+NeutrinoML_r00228_s00000_ts692702.h5  NeutrinoML_r00726_s00000_ts467852.h5
+NeutrinoML_r00229_s00000_ts710996.h5  NeutrinoML_r00727_s00000_ts452102.h5
+NeutrinoML_r00230_s00000_ts640964.h5  NeutrinoML_r00728_s00000_ts445981.h5
+NeutrinoML_r00231_s00000_ts625223.h5  NeutrinoML_r00729_s00000_ts512964.h5
+NeutrinoML_r00232_s00000_ts904840.h5  NeutrinoML_r00730_s00000_ts429273.h5
+NeutrinoML_r00233_s00000_ts779921.h5  NeutrinoML_r00731_s00000_ts435478.h5
+NeutrinoML_r00234_s00000_ts630198.h5  NeutrinoML_r00732_s00000_ts437039.h5
+NeutrinoML_r00235_s00000_ts623952.h5  NeutrinoML_r00733_s00000_ts443620.h5
+NeutrinoML_r00236_s00000_ts618964.h5  NeutrinoML_r00734_s00000_ts436349.h5
+NeutrinoML_r00237_s00000_ts629155.h5  NeutrinoML_r00735_s00000_ts471568.h5
+NeutrinoML_r00238_s00000_ts626347.h5  NeutrinoML_r00736_s00000_ts510741.h5
+NeutrinoML_r00239_s00000_ts287068.h5  NeutrinoML_r00737_s00000_ts512622.h5
+NeutrinoML_r00240_s00000_ts296321.h5  NeutrinoML_r00738_s00000_ts721483.h5
+NeutrinoML_r00241_s00000_ts298246.h5  NeutrinoML_r00739_s00000_ts367645.h5
+NeutrinoML_r00242_s00000_ts223929.h5  NeutrinoML_r00740_s00000_ts049350.h5
+NeutrinoML_r00244_s00000_ts288308.h5  NeutrinoML_r00741_s00000_ts191290.h5
+NeutrinoML_r00245_s00000_ts359652.h5  NeutrinoML_r00742_s00000_ts056513.h5
+NeutrinoML_r00246_s00000_ts302395.h5  NeutrinoML_r00743_s00000_ts332353.h5
+NeutrinoML_r00247_s00000_ts313984.h5  NeutrinoML_r00744_s00000_ts251054.h5
+NeutrinoML_r00248_s00000_ts314112.h5  NeutrinoML_r00745_s00000_ts522708.h5
+NeutrinoML_r00249_s00000_ts308595.h5  NeutrinoML_r00746_s00000_ts335436.h5
+NeutrinoML_r00250_s00000_ts283781.h5  NeutrinoML_r00747_s00000_ts470322.h5
+NeutrinoML_r00251_s00000_ts200439.h5  NeutrinoML_r00748_s00000_ts255361.h5
+NeutrinoML_r00253_s00000_ts299407.h5  NeutrinoML_r00749_s00000_ts558165.h5
+NeutrinoML_r00254_s00000_ts279243.h5  NeutrinoML_r00750_s00000_ts990758.h5
+NeutrinoML_r00255_s00000_ts286189.h5  NeutrinoML_r00751_s00000_ts133256.h5
+NeutrinoML_r00256_s00000_ts276824.h5  NeutrinoML_r00752_s00000_ts402197.h5
+NeutrinoML_r00257_s00000_ts431240.h5  NeutrinoML_r00753_s00000_ts321525.h5
+NeutrinoML_r00258_s00000_ts160733.h5  NeutrinoML_r00754_s00000_ts438741.h5
+NeutrinoML_r00259_s00000_ts110341.h5  NeutrinoML_r00755_s00000_ts577880.h5
+NeutrinoML_r00260_s00000_ts951615.h5  NeutrinoML_r00756_s00000_ts481570.h5
+NeutrinoML_r00261_s00000_ts954308.h5  NeutrinoML_r00758_s00000_ts212165.h5
+NeutrinoML_r00262_s00000_ts954587.h5  NeutrinoML_r00759_s00000_ts595037.h5
+NeutrinoML_r00263_s00000_ts941009.h5  NeutrinoML_r00760_s00000_ts534713.h5
+NeutrinoML_r00264_s00000_ts969816.h5  NeutrinoML_r00761_s00000_ts703440.h5
+NeutrinoML_r00265_s00000_ts939959.h5  NeutrinoML_r00762_s00000_ts510064.h5
+NeutrinoML_r00266_s00000_ts957985.h5  NeutrinoML_r00763_s00000_ts150549.h5
+NeutrinoML_r00267_s00000_ts932292.h5  NeutrinoML_r00764_s00000_ts413921.h5
+NeutrinoML_r00268_s00000_ts909146.h5  NeutrinoML_r00765_s00000_ts201373.h5
+NeutrinoML_r00269_s00000_ts056254.h5  NeutrinoML_r00766_s00000_ts330793.h5
+NeutrinoML_r00270_s00000_ts037258.h5  NeutrinoML_r00767_s00000_ts531873.h5
+NeutrinoML_r00271_s00000_ts054554.h5  NeutrinoML_r00768_s00000_ts748996.h5
+NeutrinoML_r00272_s00000_ts049759.h5  NeutrinoML_r00769_s00000_ts378596.h5
+NeutrinoML_r00273_s00000_ts008944.h5  NeutrinoML_r00770_s00000_ts401028.h5
+NeutrinoML_r00274_s00000_ts037246.h5  NeutrinoML_r00771_s00000_ts592287.h5
+NeutrinoML_r00275_s00000_ts062648.h5  NeutrinoML_r00772_s00000_ts588019.h5
+NeutrinoML_r00276_s00000_ts128528.h5  NeutrinoML_r00773_s00000_ts671343.h5
+NeutrinoML_r00277_s00000_ts085931.h5  NeutrinoML_r00774_s00000_ts622142.h5
+NeutrinoML_r00278_s00000_ts417410.h5  NeutrinoML_r00775_s00000_ts750690.h5
+NeutrinoML_r00279_s00000_ts932048.h5  NeutrinoML_r00776_s00000_ts770092.h5
+NeutrinoML_r00280_s00000_ts946019.h5  NeutrinoML_r00777_s00000_ts821322.h5
+NeutrinoML_r00281_s00000_ts964312.h5  NeutrinoML_r00778_s00000_ts816951.h5
+NeutrinoML_r00282_s00000_ts078702.h5  NeutrinoML_r00779_s00000_ts389105.h5
+NeutrinoML_r00283_s00000_ts762655.h5  NeutrinoML_r00780_s00000_ts539533.h5
+NeutrinoML_r00284_s00000_ts726974.h5  NeutrinoML_r00781_s00000_ts383889.h5
+NeutrinoML_r00285_s00000_ts885639.h5  NeutrinoML_r00782_s00000_ts413532.h5
+NeutrinoML_r00286_s00000_ts721020.h5  NeutrinoML_r00783_s00000_ts311712.h5
+NeutrinoML_r00287_s00000_ts907421.h5  NeutrinoML_r00784_s00000_ts329315.h5
+NeutrinoML_r00289_s00000_ts042448.h5  NeutrinoML_r00785_s00000_ts330192.h5
+NeutrinoML_r00290_s00000_ts806677.h5  NeutrinoML_r00786_s00000_ts370263.h5
+NeutrinoML_r00291_s00000_ts881032.h5  NeutrinoML_r00787_s00000_ts314722.h5
+NeutrinoML_r00292_s00000_ts919484.h5  NeutrinoML_r00788_s00000_ts376383.h5
+NeutrinoML_r00293_s00000_ts929697.h5  NeutrinoML_r00789_s00000_ts326934.h5
+NeutrinoML_r00294_s00000_ts934207.h5  NeutrinoML_r00790_s00000_ts346496.h5
+NeutrinoML_r00295_s00000_ts992446.h5  NeutrinoML_r00791_s00000_ts317947.h5
+NeutrinoML_r00296_s00000_ts876145.h5  NeutrinoML_r00792_s00000_ts376955.h5
+NeutrinoML_r00297_s00000_ts033869.h5  NeutrinoML_r00793_s00000_ts391864.h5
+NeutrinoML_r00298_s00000_ts099322.h5  NeutrinoML_r00794_s00000_ts390564.h5
+NeutrinoML_r00299_s00000_ts804412.h5  NeutrinoML_r00795_s00000_ts410999.h5
+NeutrinoML_r00300_s00000_ts765371.h5  NeutrinoML_r00796_s00000_ts319838.h5
+NeutrinoML_r00301_s00000_ts846782.h5  NeutrinoML_r00798_s00000_ts666113.h5
+NeutrinoML_r00302_s00000_ts814492.h5  NeutrinoML_r00799_s00000_ts917576.h5
+NeutrinoML_r00303_s00000_ts560601.h5  NeutrinoML_r00800_s00000_ts879255.h5
+NeutrinoML_r00304_s00000_ts601072.h5  NeutrinoML_r00801_s00000_ts874345.h5
+NeutrinoML_r00305_s00000_ts568131.h5  NeutrinoML_r00802_s00000_ts909220.h5
+NeutrinoML_r00306_s00000_ts582152.h5  NeutrinoML_r00803_s00000_ts857315.h5
+NeutrinoML_r00307_s00000_ts643707.h5  NeutrinoML_r00804_s00000_ts873562.h5
+NeutrinoML_r00308_s00000_ts676744.h5  NeutrinoML_r00805_s00000_ts843976.h5
+NeutrinoML_r00309_s00000_ts672076.h5  NeutrinoML_r00806_s00000_ts837975.h5
+NeutrinoML_r00310_s00000_ts682909.h5  NeutrinoML_r00807_s00000_ts879246.h5
+NeutrinoML_r00311_s00000_ts693754.h5  NeutrinoML_r00808_s00000_ts871012.h5
+NeutrinoML_r00312_s00000_ts736737.h5  NeutrinoML_r00810_s00000_ts868785.h5
+NeutrinoML_r00313_s00000_ts682780.h5  NeutrinoML_r00811_s00000_ts871831.h5
+NeutrinoML_r00314_s00000_ts773597.h5  NeutrinoML_r00812_s00000_ts866440.h5
+NeutrinoML_r00315_s00000_ts745467.h5  NeutrinoML_r00813_s00000_ts861165.h5
+NeutrinoML_r00316_s00000_ts853256.h5  NeutrinoML_r00814_s00000_ts909639.h5
+NeutrinoML_r00317_s00000_ts682921.h5  NeutrinoML_r00815_s00000_ts838453.h5
+NeutrinoML_r00318_s00000_ts803258.h5  NeutrinoML_r00816_s00000_ts990504.h5
+NeutrinoML_r00319_s00000_ts417352.h5  NeutrinoML_r00817_s00000_ts863418.h5
+NeutrinoML_r00320_s00000_ts005379.h5  NeutrinoML_r00818_s00000_ts674626.h5
+NeutrinoML_r00321_s00000_ts032098.h5  NeutrinoML_r00819_s00000_ts209821.h5
+NeutrinoML_r00322_s00000_ts333815.h5  NeutrinoML_r00820_s00000_ts254639.h5
+NeutrinoML_r00323_s00000_ts833708.h5  NeutrinoML_r00821_s00000_ts796925.h5
+NeutrinoML_r00324_s00000_ts440291.h5  NeutrinoML_r00822_s00000_ts552325.h5
+NeutrinoML_r00325_s00000_ts858975.h5  NeutrinoML_r00823_s00000_ts766900.h5
+NeutrinoML_r00326_s00000_ts830903.h5  NeutrinoML_r00824_s00000_ts752781.h5
+NeutrinoML_r00327_s00000_ts865357.h5  NeutrinoML_r00825_s00000_ts081257.h5
+NeutrinoML_r00328_s00000_ts614607.h5  NeutrinoML_r00826_s00000_ts085323.h5
+NeutrinoML_r00329_s00000_ts958787.h5  NeutrinoML_r00828_s00000_ts051918.h5
+NeutrinoML_r00330_s00000_ts751181.h5  NeutrinoML_r00829_s00000_ts123363.h5
+NeutrinoML_r00331_s00000_ts566479.h5  NeutrinoML_r00830_s00000_ts183635.h5
+NeutrinoML_r00332_s00000_ts600913.h5  NeutrinoML_r00831_s00000_ts892100.h5
+NeutrinoML_r00333_s00000_ts863746.h5  NeutrinoML_r00832_s00000_ts661725.h5
+NeutrinoML_r00334_s00000_ts781334.h5  NeutrinoML_r00833_s00000_ts069305.h5
+NeutrinoML_r00335_s00000_ts032713.h5  NeutrinoML_r00834_s00000_ts967081.h5
+NeutrinoML_r00336_s00000_ts846843.h5  NeutrinoML_r00835_s00000_ts378041.h5
+NeutrinoML_r00337_s00000_ts034016.h5  NeutrinoML_r00836_s00000_ts991564.h5
+NeutrinoML_r00338_s00000_ts484556.h5  NeutrinoML_r00837_s00000_ts240786.h5
+NeutrinoML_r00339_s00000_ts955740.h5  NeutrinoML_r00838_s00000_ts340490.h5
+NeutrinoML_r00340_s00000_ts498068.h5  NeutrinoML_r00839_s00000_ts183522.h5
+NeutrinoML_r00341_s00000_ts930434.h5  NeutrinoML_r00840_s00000_ts120092.h5
+NeutrinoML_r00342_s00000_ts396147.h5  NeutrinoML_r00841_s00000_ts135857.h5
+NeutrinoML_r00343_s00000_ts239638.h5  NeutrinoML_r00842_s00000_ts139834.h5
+NeutrinoML_r00344_s00000_ts466369.h5  NeutrinoML_r00843_s00000_ts105324.h5
+NeutrinoML_r00345_s00000_ts579952.h5  NeutrinoML_r00844_s00000_ts180927.h5
+NeutrinoML_r00346_s00000_ts562295.h5  NeutrinoML_r00845_s00000_ts161208.h5
+NeutrinoML_r00347_s00000_ts545969.h5  NeutrinoML_r00846_s00000_ts160810.h5
+NeutrinoML_r00348_s00000_ts692611.h5  NeutrinoML_r00847_s00000_ts126137.h5
+NeutrinoML_r00349_s00000_ts093007.h5  NeutrinoML_r00848_s00000_ts110842.h5
+NeutrinoML_r00350_s00000_ts003816.h5  NeutrinoML_r00849_s00000_ts097450.h5
+NeutrinoML_r00351_s00000_ts948451.h5  NeutrinoML_r00850_s00000_ts100575.h5
+NeutrinoML_r00352_s00000_ts499076.h5  NeutrinoML_r00851_s00000_ts160509.h5
+NeutrinoML_r00353_s00000_ts482920.h5  NeutrinoML_r00852_s00000_ts161274.h5
+NeutrinoML_r00354_s00000_ts560144.h5  NeutrinoML_r00853_s00000_ts155182.h5
+NeutrinoML_r00355_s00000_ts563782.h5  NeutrinoML_r00854_s00000_ts109042.h5
+NeutrinoML_r00356_s00000_ts634073.h5  NeutrinoML_r00856_s00000_ts115471.h5
+NeutrinoML_r00357_s00000_ts840694.h5  NeutrinoML_r00857_s00000_ts199179.h5
+NeutrinoML_r00359_s00000_ts230546.h5  NeutrinoML_r00858_s00000_ts361335.h5
+NeutrinoML_r00360_s00000_ts794610.h5  NeutrinoML_r00859_s00000_ts889906.h5
+NeutrinoML_r00361_s00000_ts321730.h5  NeutrinoML_r00860_s00000_ts833758.h5
+NeutrinoML_r00362_s00000_ts003811.h5  NeutrinoML_r00861_s00000_ts780962.h5
+NeutrinoML_r00363_s00000_ts276599.h5  NeutrinoML_r00863_s00000_ts766141.h5
+NeutrinoML_r00364_s00000_ts979354.h5  NeutrinoML_r00864_s00000_ts779340.h5
+NeutrinoML_r00365_s00000_ts498171.h5  NeutrinoML_r00866_s00000_ts812937.h5
+NeutrinoML_r00366_s00000_ts151101.h5  NeutrinoML_r00867_s00000_ts772491.h5
+NeutrinoML_r00367_s00000_ts466537.h5  NeutrinoML_r00868_s00000_ts859823.h5
+NeutrinoML_r00368_s00000_ts279116.h5  NeutrinoML_r00869_s00000_ts758196.h5
+NeutrinoML_r00369_s00000_ts533054.h5  NeutrinoML_r00870_s00000_ts822983.h5
+NeutrinoML_r00370_s00000_ts030517.h5  NeutrinoML_r00871_s00000_ts774707.h5
+NeutrinoML_r00371_s00000_ts427523.h5  NeutrinoML_r00872_s00000_ts814787.h5
+NeutrinoML_r00372_s00000_ts256541.h5  NeutrinoML_r00873_s00000_ts047405.h5
+NeutrinoML_r00373_s00000_ts480153.h5  NeutrinoML_r00874_s00000_ts820894.h5
+NeutrinoML_r00374_s00000_ts347086.h5  NeutrinoML_r00875_s00000_ts827118.h5
+NeutrinoML_r00375_s00000_ts630572.h5  NeutrinoML_r00876_s00000_ts814723.h5
+NeutrinoML_r00376_s00000_ts526677.h5  NeutrinoML_r00877_s00000_ts807023.h5
+NeutrinoML_r00377_s00000_ts636019.h5  NeutrinoML_r00878_s00000_ts103023.h5
+NeutrinoML_r00378_s00000_ts655475.h5  NeutrinoML_r00879_s00000_ts880658.h5
+NeutrinoML_r00379_s00000_ts673551.h5  NeutrinoML_r00880_s00000_ts228380.h5
+NeutrinoML_r00380_s00000_ts672288.h5  NeutrinoML_r00881_s00000_ts306811.h5
+NeutrinoML_r00381_s00000_ts689831.h5  NeutrinoML_r00882_s00000_ts261512.h5
+NeutrinoML_r00382_s00000_ts740019.h5  NeutrinoML_r00883_s00000_ts964449.h5
+NeutrinoML_r00383_s00000_ts631486.h5  NeutrinoML_r00884_s00000_ts600972.h5
+NeutrinoML_r00384_s00000_ts656836.h5  NeutrinoML_r00885_s00000_ts062502.h5
+NeutrinoML_r00385_s00000_ts752148.h5  NeutrinoML_r00886_s00000_ts991203.h5
+NeutrinoML_r00386_s00000_ts656200.h5  NeutrinoML_r00887_s00000_ts022962.h5
+NeutrinoML_r00387_s00000_ts657818.h5  NeutrinoML_r00888_s00000_ts909589.h5
+NeutrinoML_r00388_s00000_ts614674.h5  NeutrinoML_r00889_s00000_ts168152.h5
+NeutrinoML_r00389_s00000_ts625463.h5  NeutrinoML_r00890_s00000_ts454019.h5
+NeutrinoML_r00390_s00000_ts642438.h5  NeutrinoML_r00891_s00000_ts960216.h5
+NeutrinoML_r00391_s00000_ts726115.h5  NeutrinoML_r00892_s00000_ts452456.h5
+NeutrinoML_r00392_s00000_ts684239.h5  NeutrinoML_r00893_s00000_ts114448.h5
+NeutrinoML_r00393_s00000_ts750874.h5  NeutrinoML_r00894_s00000_ts863029.h5
+NeutrinoML_r00394_s00000_ts634341.h5  NeutrinoML_r00895_s00000_ts254877.h5
+NeutrinoML_r00395_s00000_ts618938.h5  NeutrinoML_r00896_s00000_ts115131.h5
+NeutrinoML_r00396_s00000_ts621087.h5  NeutrinoML_r00897_s00000_ts117460.h5
+NeutrinoML_r00397_s00000_ts723038.h5  NeutrinoML_r00898_s00000_ts554417.h5
+NeutrinoML_r00398_s00000_ts477077.h5  NeutrinoML_r00899_s00000_ts536558.h5
+NeutrinoML_r00399_s00000_ts446093.h5  NeutrinoML_r00900_s00000_ts560643.h5
+NeutrinoML_r00400_s00000_ts458498.h5  NeutrinoML_r00901_s00000_ts621408.h5
+NeutrinoML_r00402_s00000_ts471640.h5  NeutrinoML_r00902_s00000_ts642470.h5
+NeutrinoML_r00403_s00000_ts422304.h5  NeutrinoML_r00903_s00000_ts596058.h5
+NeutrinoML_r00404_s00000_ts425611.h5  NeutrinoML_r00904_s00000_ts398770.h5
+NeutrinoML_r00405_s00000_ts447671.h5  NeutrinoML_r00905_s00000_ts618976.h5
+NeutrinoML_r00406_s00000_ts437395.h5  NeutrinoML_r00906_s00000_ts632310.h5
+NeutrinoML_r00407_s00000_ts439792.h5  NeutrinoML_r00907_s00000_ts656729.h5
+NeutrinoML_r00408_s00000_ts518627.h5  NeutrinoML_r00908_s00000_ts702803.h5
+NeutrinoML_r00409_s00000_ts554860.h5  NeutrinoML_r00909_s00000_ts744765.h5
+NeutrinoML_r00410_s00000_ts464925.h5  NeutrinoML_r00910_s00000_ts675702.h5
+NeutrinoML_r00411_s00000_ts518949.h5  NeutrinoML_r00911_s00000_ts687381.h5
+NeutrinoML_r00412_s00000_ts461456.h5  NeutrinoML_r00912_s00000_ts595972.h5
+NeutrinoML_r00413_s00000_ts556338.h5  NeutrinoML_r00913_s00000_ts645344.h5
+NeutrinoML_r00414_s00000_ts462914.h5  NeutrinoML_r00914_s00000_ts660837.h5
+NeutrinoML_r00415_s00000_ts522130.h5  NeutrinoML_r00915_s00000_ts710306.h5
+NeutrinoML_r00416_s00000_ts513534.h5  NeutrinoML_r00916_s00000_ts679531.h5
+NeutrinoML_r00417_s00000_ts644749.h5  NeutrinoML_r00918_s00000_ts637189.h5
+NeutrinoML_r00418_s00000_ts936571.h5  NeutrinoML_r00919_s00000_ts247660.h5
+NeutrinoML_r00419_s00000_ts382834.h5  NeutrinoML_r00920_s00000_ts224012.h5
+NeutrinoML_r00420_s00000_ts352655.h5  NeutrinoML_r00921_s00000_ts326751.h5
+NeutrinoML_r00421_s00000_ts313806.h5  NeutrinoML_r00922_s00000_ts358714.h5
+NeutrinoML_r00422_s00000_ts340180.h5  NeutrinoML_r00923_s00000_ts784570.h5
+NeutrinoML_r00423_s00000_ts301974.h5  NeutrinoML_r00924_s00000_ts875088.h5
+NeutrinoML_r00424_s00000_ts286670.h5  NeutrinoML_r00925_s00000_ts048539.h5
+NeutrinoML_r00425_s00000_ts447289.h5  NeutrinoML_r00926_s00000_ts820176.h5
+NeutrinoML_r00427_s00000_ts344379.h5  NeutrinoML_r00927_s00000_ts173263.h5
+NeutrinoML_r00428_s00000_ts288955.h5  NeutrinoML_r00928_s00000_ts271426.h5
+NeutrinoML_r00429_s00000_ts295035.h5  NeutrinoML_r00929_s00000_ts417789.h5
+NeutrinoML_r00430_s00000_ts288599.h5  NeutrinoML_r00930_s00000_ts330093.h5
+NeutrinoML_r00431_s00000_ts318041.h5  NeutrinoML_r00931_s00000_ts978679.h5
+NeutrinoML_r00432_s00000_ts290403.h5  NeutrinoML_r00932_s00000_ts821926.h5
+NeutrinoML_r00433_s00000_ts286908.h5  NeutrinoML_r00933_s00000_ts036882.h5
+NeutrinoML_r00434_s00000_ts289580.h5  NeutrinoML_r00934_s00000_ts8247

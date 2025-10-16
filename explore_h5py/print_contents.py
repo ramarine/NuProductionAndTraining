@@ -14,7 +14,11 @@ if len(sys.argv) != 2 or sys.argv[1] in ('-h', '--help'):
     # filename = "/scratch/amarinei/data/Atmospherics/MuCC_250_1000/hdf5/NeutrinoML_r00497_s00000_ts230414.h5"
     # filename = "/scratch/amarinei/data/Atmospherics/MuCC_250_1000/hdf5/NeutrinoML_r00498_s00000_ts562468.h5"
     # filename = "/scratch/amarinei/data/Atmospherics/MuCC_250_1000/hdf5/NeutrinoML_r00499_s00000_ts138774.h5"
-    filename = "/scratch/amarinei/data/Atmospherics/NC_5_5/hdf5/NeutrinoML_r00004_s00000_ts707582.h5"
+    # filename = "/scratch/amarinei/data/Atmospherics/NC_5_5/hdf5/NeutrinoML_r00004_s00000_ts707582.h5"
+    # filename =  "/scratch/amarinei/data/Atmospherics/TauCC_250_1000/hdf5/NeutrinoML_r00501_s00000_ts477622.h5"
+    filename =  "/scratch/amarinei/data/Atmospherics/ECC_250_1000/hdf5/NeutrinoML_r00501_s00000_ts793244.h5"
+    # filename =  "/scratch/amarinei/data/Atmospherics/ECC_250_1000/hdf5/NeutrinoML_r00495_s00000_ts993214.h5"
+    
 else:
     filename = sys.argv[1]
 
