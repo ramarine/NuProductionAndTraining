@@ -25,6 +25,6 @@ else
     echo "Directory already exists: $OUT_DIR"
 fi
 
-lar -c standard_detsim_dune10kt_1x2x6.fcl -s ${IN_FILE_PATH}/g4/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_${RUN_NUM}.root -n ${NUM_EVENTS} -o ${OUT_DIR}/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_detsim_${RUN_NUM}.root -e ${RUN_NUM}:0:1
+lar -c standard_detsim_dune10kt.fcl -s ${IN_FILE_PATH}/g4/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_${RUN_NUM}.root -n ${NUM_EVENTS} -o ${OUT_DIR}/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_detsim_${RUN_NUM}.root -e ${RUN_NUM}:0:1
  
 

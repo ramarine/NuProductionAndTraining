@@ -24,6 +24,5 @@ else
     echo "Directory already exists: $OUT_DIR"
 fi
 
-lar -c keepEMchildren_g4_dune10kt_1x2x6.fcl -s ${IN_FILE_PATH}/gen_evt/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_${RUN_NUM}.root -n ${NUM_EVENTS} -o ${OUT_DIR}/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_${RUN_NUM}.root -e ${RUN_NUM}:0:1
- 
+lar -c keepEMchildren_g4_dune10kt.fcl -s ${IN_FILE_PATH}/gen_evt/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_${RUN_NUM}.root -n ${NUM_EVENTS} -o ${OUT_DIR}/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_${RUN_NUM}.root -e ${RUN_NUM}:0:1
 
