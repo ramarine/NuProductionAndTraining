@@ -24,7 +24,7 @@ fi
 
 module load StdEnv/2020
 module load apptainer/1.1.8
-source /home/amarinei/Software/LArSoft_scripts/setup_LArSoft_area_cc.sh /home/amarinei/Software/LArSoft_v10_09_00d00
+source /scratch/amarinei/LArSoft_scripts/setup_LArSoft_area_cc.sh /home/amarinei/Software/LArSoft_v10_09_00d00
 
 singularity exec  --bind /home/$USERNAME,/scratch/$USERNAME,/cvmfs,/project/6071458 /project/6071458/neutrino_ml/trjsl7 `pwd`/g4.sh ${NUM_EVENTS} ${RUN_NUM} ${IN_FILE_PATH} ${FCL_FILE_NAME}
 

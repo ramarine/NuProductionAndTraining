@@ -21,11 +21,10 @@ NuMl image:
 ## A. Interaction pre-production: h5 files containing diverse interactions with diverse number of particles
 
 
-The following scripts will run atmospheric neutrino event generation for charged current interactions (CC):
+The following script will run atmospheric neutrino event generation for charged current interactions (CC):
 
-- `run_all_e_CC.sh` &mdash; for electron neutrinos
-- `run_all_mu_CC.sh` &mdash; for muon neutrinos
-- `run_all_tau_CC.sh` &mdash; for tau neutrinos
+- `run_all.sh [PARTICLE_TYPE] [INTERACTION_TYPE]` &mdash; for electron neutrinos
+
 
 **Features:**
 - All logs are saved in `data/logs/`, with meaningful names for easy debugging.
