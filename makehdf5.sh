@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IN_FILE_PATH=$3
-OUT_DIR1="$3/hdf5/LL_reco"
+OUT_DIR1="$3/hdf5"
 OUT_DIR2="$3/hdf5/HL_reco"
 RUN_NUM=$2
 NUM_EVENTS=$1
@@ -31,6 +31,6 @@ else
 fi
 
 cd ${OUT_DIR1}
-lar -c hdf5maker_dune10kt.fcl -s ${IN_FILE_PATH}/reco/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_detsim_reco1_${RUN_NUM}.root
+lar -c hdf5maker_dune10kt.fcl -s ${IN_FILE_PATH}/reco/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_detsim_reco_${RUN_NUM}.root
 cd ${OUT_DIR2}
 lar -c hdf5maker_dune10kt.fcl -s ${IN_FILE_PATH}/reco/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_detsim_reco2_${RUN_NUM}.root

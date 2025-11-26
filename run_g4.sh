@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # This is a script for running the LArSoft event generator on cedar. The numbers in the sbatch array line are the run number and they should be unique for each event that will be processed so change it as nessisary the script can be run by the following way
+# module load StdEnv/2020
+# module load apptainer/1.1.8
+# apptainer shell --bind /home/amarinei,/cvmfs,/scratch/amarinei,/project/6071458 -C --cleanenv /project/6079563/neutrino_ml/Numl_Image/numl:v23.11.0.sif
 # sbatch run_g4.sh <num_events_to_gen> <path/to/generated/files> <output_directory_for_files>
 
 NUM_EVENTS=$1
