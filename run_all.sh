@@ -3,7 +3,7 @@
 cd /scratch/amarinei/LArSoft_scripts
 
 
-MEMORY=8
+MEMORY=12
 
 usage() {
   echo ""
@@ -40,7 +40,6 @@ if [ -z "$PARTICLE_TYPE" ] || [ -z "$INTERACTION_TYPE" ] || [ -z "$NUM_EVENTS" ]
   usage
 fi
 
-
 if [ $PARTICLE_TYPE == "tau" ]; then
     DATA_DIR="/scratch/amarinei/data/Atmospherics/Tau"${INTERACTION_TYPE}"_${NUM_EVENTS}_${NUM_FILES}"
     FCL_FILE_NAME="prodgenie_atmnu_max_weighted_randompolicy_dune10kt_tau_CC"
@@ -62,8 +61,8 @@ LOG_DIR="$DATA_DIR/logs"
 GENERAL_LOG_DIR="$LOG_DIR/general"
 
 LOG_SBATCH_OPTS="--account=def-nilic --time=0:35:00 --mem=1G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL"
-COMMON_SBATCH_OPTS="--account=def-nilic --time=1:30:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL --array=$ARRAY_MIN-$ARRAY_MAX"
-DETSIM_SBATCH_OPTS="--account=def-nilic --time=1:30:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL --array=$ARRAY_MIN-$ARRAY_MAX"
+COMMON_SBATCH_OPTS="--account=def-nilic --time=1:30:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --array=$ARRAY_MIN-$ARRAY_MAX"
+DETSIM_SBATCH_OPTS="--account=def-nilic --time=1:30:00 --mem=${MEMORY}G --mail-user=robert.mihai.amarinei@cern.ch --array=$ARRAY_MIN-$ARRAY_MAX"
 
 
 mkdir -p "$DATA_DIR" "$LOG_DIR" "$GENERAL_LOG_DIR"
@@ -83,9 +82,12 @@ job3=$(sbatch $DETSIM_SBATCH_OPTS -J ${PARTICLE_TYPE}_detsim --dependency=aftero
 job3_a=$(sbatch $LOG_SBATCH_OPTS -J ${PARTICLE_TYPE}_del_g4 --dependency=afterok:$job3 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err delete_g4.sh "$DATA_DIR" | awk '{print $4}')
 job4=$(sbatch $COMMON_SBATCH_OPTS -J ${PARTICLE_TYPE}_reco --dependency=afterok:$job3 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_reco.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
 job4_a=$(sbatch $LOG_SBATCH_OPTS -J ${PARTICLE_TYPE}_del_detsim --dependency=afterok:$job4 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err delete_detsim.sh "$DATA_DIR" | awk '{print $4}')
-job5=$(sbatch $COMMON_SBATCH_OPTS -J ${PARTICLE_TYPE}_makehdf5 --dependency=afterok:$job4 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_makehdf5.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
 
-Retrieve and log timing info for all jobs after completion
-job6=$(sbatch $LOG_SBATCH_OPTS --dependency=afterany:$job5 --output=$LOG_DIR/jobtime_%j.out --error=$LOG_DIR/jobtime_%j.err --wrap="sacct -j $job1,$job2,$job3,$job4,$job5 --format=JobID,JobName,Start,End,Elapsed,MaxRSS --noheader | grep -v '\+' > $LOG_DIR/job_times.log && cat $LOG_DIR/job_times.log" | awk '{print $4}')
-job7=$(sbatch $LOG_SBATCH_OPTS --dependency=afterok:$job6 --output=$LOG_DIR/clean_%j.out --error=$LOG_DIR/clean_%j.err --wrap="python3 explore_logs/clean_job_times.py $LOG_DIR job_times.log" | awk '{print $4}')
+job5=$(sbatch $COMMON_SBATCH_OPTS -J ${PARTICLE_TYPE}_reco2 --dependency=afterok:$job4 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_reco2.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}') 
+job6=$(sbatch $COMMON_SBATCH_OPTS -J ${PARTICLE_TYPE}_makehdf5 --dependency=afterok:$job5 --output=$LOG_DIR/slurm-%x-%j.out --error=$LOG_DIR/slurm-%x-%j.err run_makehdf5.sh $NUM_EVENTS "$DATA_DIR" $FCL_FILE_NAME | awk '{print $4}')
 
+# # Retrieve and log timing info for all jobs after completion
+job7=$(sbatch $LOG_SBATCH_OPTS --dependency=afterany:$job6 --output=$LOG_DIR/jobtime_%j.out --error=$LOG_DIR/jobtime_%j.err --wrap="sacct -j $job1,$job2,$job3,$job4,$job5 --format=JobID,JobName,Start,End,Elapsed,MaxRSS --noheader | grep -v '\+' > $LOG_DIR/job_times.log && cat $LOG_DIR/job_times.log" | awk '{print $4}')
+job8=$(sbatch $LOG_SBATCH_OPTS --dependency=afterok:$job7 --output=$LOG_DIR/clean_%j.out --error=$LOG_DIR/clean_%j.err --wrap="python3 explore_logs/clean_job_times.py $LOG_DIR job_times.log" | awk '{print $4}')
+
+job9=$(sbatch --account=def-nilic --dependency=afterok:$job8 run_conc_add_proc.sh -i ${DATA_DIR}/hdf5_reco1 -o concatenate | awk '{print $4}')

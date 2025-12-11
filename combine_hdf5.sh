@@ -13,8 +13,8 @@ module load apptainer/1.1.8
 source /scratch/amarinei/LArSoft_scripts/setup_LArSoft_area_cc.sh /home/amarinei/Software/LArSoft_v10_09_00d00
 
 # INFILE_DIR="/scratch/amarinei/data/Atmospherics/TauCC_10/hdf5"
-INFILE_DIR="/scratch/amarinei/data/Atmospherics/TauCC_250_1000/hdf5"
-OUT_NAME="10f_10e"
+INFILE_DIR=$1
+OUT_NAME=$2
 
 
 PATH_TO_NUML="/project/6079563/neutrino_ml/Numl_Image/numl:v23.11.0.sif"
@@ -28,7 +28,7 @@ done
 
 echo "Running ph5_concat ..."
 
-singularity exec --cleanenv --bind ${INFILE_DIR}:/numl_data --bind /project/6079563 --bind /scratch/${USERNAME} --nv ${PATH_TO_NUML} mpiexec -n 9 ph5_concat -i ${INFILE_DIR}/files_to_concat.txt -o ${INFILE_DIR}/${OUT_NAME}.gnn.h5
+singularity exec --cleanenv --bind ${INFILE_DIR}:/numl_data --bind /project/6079563 --bind /scratch/${USERNAME} --nv ${PATH_TO_NUML} mpiexec -n 1 ph5_concat -i ${INFILE_DIR}/files_to_concat.txt -o ${INFILE_DIR}/${OUT_NAME}.gnn.h5
 
 echo "ph5_concat done"
 

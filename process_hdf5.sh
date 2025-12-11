@@ -10,8 +10,8 @@ PATH_TO_IMAGE_FILE="/project/6079563/neutrino_ml/Numl_Image"
 # PATH_TO_NUGRAPH="/project/6071458/neutrino_ml/LArSoft_v09_83_01d00/srcs/numl"
 PATH_TO_NUGRAPH="/project/6071458/neutrino_ml"
 
-INFILE_DIR="/scratch/amarinei/data/Atmospherics/TauCC_250_1000/hdf5"
-OUT_NAME="10f_10e"
+INFILE_DIR=$1
+OUT_NAME=$2
 OUT_DIR="${INFILE_DIR}/hdf5_proc"
 FILENAME=${OUT_NAME}
 INPUT_FILE_PATH="${INFILE_DIR}/${FILENAME}"

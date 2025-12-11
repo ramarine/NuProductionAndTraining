@@ -3,7 +3,7 @@
 NUM_EVENTS=$1
 RUN_NUM=$2
 IN_FILE_PATH=$3
-OUT_DIR="$3/reco"
+OUT_DIR="$3/reco2"
 FCL_FILE_NAME=$4
 DUNE_VERSION=v10_09_00d00
 QUALS=e26:prof
@@ -22,6 +22,6 @@ else
     echo "Directory already exists: $OUT_DIR"
 fi
 
-lar -c standard_reco1_dune10kt.fcl -s ${IN_FILE_PATH}/detsim/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_detsim_${RUN_NUM}.root -n ${NUM_EVENTS} -o ${OUT_DIR}/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_detsim_reco_${RUN_NUM}.root -e ${RUN_NUM}:0:1
+lar -c standard_reco2_atmos_dune10kt.fcl -s ${IN_FILE_PATH}/reco/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_detsim_reco_${RUN_NUM}.root -n ${NUM_EVENTS} -o ${OUT_DIR}/${FCL_FILE_NAME}_${NUM_EVENTS}evts_gen_g4_detsim_reco2_${RUN_NUM}.root -e ${RUN_NUM}:0:1
  
 

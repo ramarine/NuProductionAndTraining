@@ -4,8 +4,8 @@ module load StdEnv/2020
 module load apptainer/1.1.8
 source /scratch/amarinei/LArSoft_scripts/setup_LArSoft_area_cc.sh /home/amarinei/Software/LArSoft_v10_09_00d00
 # FILENAME=$1
-INFILE_DIR="/scratch/amarinei/data/Atmospherics/TauCC_250_1000/hdf5"
-OUT_NAME="10f_10e"
+INFILE_DIR=$1
+OUT_NAME=$2
 FILENAME=${OUT_NAME}
 
 
