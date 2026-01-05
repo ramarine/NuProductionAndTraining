@@ -27,8 +27,6 @@ else
 fi
 OUTPUT_FILE_PATH="${OUT_DIR}/${FILENAME}"
 
-
-
 singularity exec --cleanenv --bind /project/6079563 --bind /project/6071458 --bind /scratch/${USERNAME} ${PATH_TO_IMAGE_FILE}/numl:v23.11.0.sif ${PATH_TO_NUGRAPH}/nugraph/scripts/process.py -i ${INPUT_FILE_PATH}.gnn.h5 -o ${OUTPUT_FILE_PATH}_processed
 
 

@@ -28,7 +28,7 @@ done
 
 echo "Running ph5_concat ..."
 
-singularity exec --cleanenv --bind ${INFILE_DIR}:/numl_data --bind /project/6079563 --bind /scratch/${USERNAME} --nv ${PATH_TO_NUML} mpiexec -n 1 ph5_concat -i ${INFILE_DIR}/files_to_concat.txt -o ${INFILE_DIR}/${OUT_NAME}.gnn.h5
+singularity exec --cleanenv --bind ${INFILE_DIR}:/numl_data --bind /project/6079563 --bind /scratch/${USERNAME} --nv ${PATH_TO_NUML} mpiexec -n 32 ph5_concat -i ${INFILE_DIR}/files_to_concat.txt -o ${INFILE_DIR}/${OUT_NAME}.gnn.h5
 
 echo "ph5_concat done"
 

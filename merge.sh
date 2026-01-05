@@ -1,5 +1,4 @@
 #! /bin/bash
-
 #SBATCH --time=01:30:00
 #SBATCH --account=def-nilic
 #SBATCH --mail-user=robert.mihai.amarinei@cern.ch
@@ -7,19 +6,18 @@
 #SBATCH --mem=20G
 #SBATCH --nodes=1
 #SBATCH --ntasks=32
-# Paths for files
-
-
-# Paths for files
+#Paths for files
 
 module load StdEnv/2020
 module load apptainer/1.1.8
 # source /scratch/amarinei/LArSoft_scripts/setup_LArSoft_area_cc.sh /home/amarinei/Software/LArSoft_v10_09_00d00
 
 USERNAME="amarinei"
-PATH_TO_IMAGE_FILE="/home/${USERNAME}/projects/rpp-nilic/neutrino_ml/Numl_Image"
+#PATH_TO_IMAGE_FILE="/home/${USERNAME}/projects/rpp-nilic/neutrino_ml/Numl_Image"
+
+PATH_TO_IMAGE_FILE="/project/6071458/neutrino_ml/"
 PATH_TO_NUGRAPH="/project/6071458/neutrino_ml/nugraph"
-# filename=${1%.h5}
+#filename=${1%.h5}
 INFILE_DIR=$1
 OUT_NAME=$2
 
