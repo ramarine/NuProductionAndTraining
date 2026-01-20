@@ -39,14 +39,14 @@ Run example (type --help for more infor): `./run_conc_add_proc.sh -i /scratch/am
 
 ### 1. Concatenate HDF5 Files
 
-`sbatch --acount=def-nilic combine_hdf5.sh`
+`combine_hdf5.sh`
 
 !!This script needs a lot of memory ~comparable with the total size of the h5 files!!
 This scripts concatenates all h5 files produced earlier in step A (`run_makehdf5.sh`). It is normal that it will compress the total size of events. for example the total individual files were 120G while the concatenated one was 60G.
 
 ### 2. Add Event Keys
 
-`sbatch --acount=def-nilic add_key.sh`
+`add_key.sh`
 
 !!This script will take a longer time to run than the previous!!
 After concatenation, each HDF5 file will have several tables (event, edep, etc.). A provided binary will take the `event_id` key from the event table and copy it into all other tables if missing.  
@@ -54,6 +54,7 @@ This enables every table to be accessed by event ID during downstream processing
 
 
 ### 3. Convert Hits to Graph
+
 
 **Warning:**  
 Upon starting this step, files will be merged and the originals deleted.  
@@ -66,6 +67,10 @@ Exit your current container and start the following one:
 - Uses MPI for parallel graph processing (default: 32 tasks requested).
 
 ---
+
+### 3. Convert Hits to Graph
+
+Merge... Explanation come soon.
 
 ## C. Run Training
 
