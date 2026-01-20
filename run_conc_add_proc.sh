@@ -3,7 +3,7 @@
 usage() {
   echo ""
   echo "Usage: $0 -i INFILE_DIR [-i INFILE_DIR ...] -o OUT_NAME -n OUT_NAME"
-  echo "Example: sbatch --account=def-nilic $0 -i /scratch/amarinei/data/Atmospherics/TauCC_1_50/hdf5_reco1 -i /scratch/amarinei/data/Atmospherics/TauCC_1_50/hdf5_reco2 -n concatenated -o /scratch/amarinei/data/Atmospherics/TauCC_1_50/output"
+  echo "Example: sbatch --account=def-nilic $0 -i /scratch/amarinei/data/Atmospherics/TauCC_1_50/hdf5_reco1 -i /scratch/amarinei/data/Atmospherics/eCC_1_50/hdf5_reco2 -n concatenated -o /scratch/amarinei/data/Atmospherics/TauCC_1_50/output"
   echo ""
   echo "Options:"
   echo "  -i INFILE_DIR    Input directory (can be specified multiple times)"
@@ -52,15 +52,15 @@ LOG_DIR="${OUTFILE_DIR}/logs_proc"
 mkdir -p "$LOG_DIR"
 
 # Common SLURM options
-COMMON_OPTS="--account=def-nilic --mail-user=robert.mihai.amarinei@cern.ch --mail-type=BEGIN,END,FAIL"
+COMMON_OPTS="--account=def-nilic"
 
-STEP1_OPTS="--time=0:30:00 --mem=12G --nodes=1 --ntasks=32 $COMMON_OPTS"
-STEP2_OPTS="--time=1:30:00 --mem=12G $COMMON_OPTS"
-STEP3_OPTS="--time=1:30:00 --mem=12G --nodes=1 --ntasks=32 $COMMON_OPTS"
+# STEP1_OPTS="--time=0:30:00 --mem=12G --nodes=1 --ntasks=32 $COMMON_OPTS"
+# STEP2_OPTS="--time=1:30:00 --mem=12G $COMMON_OPTS"
+# STEP3_OPTS="--time=1:30:00 --mem=12G --nodes=1 --ntasks=32 $COMMON_OPTS"
 
-# STEP1_OPTS="--time=1:30:00 --mem=32G --nodes=1 --ntasks=32 $COMMON_OPTS"
-# STEP2_OPTS="--time=12:30:00 --mem=32G $COMMON_OPTS"
-# STEP3_OPTS="--time=12:30:00 --mem=32G --nodes=1 --ntasks=32 $COMMON_OPTS"
+STEP1_OPTS="--time=1:30:00 --mem=32G --nodes=1 --ntasks=32 $COMMON_OPTS"
+STEP2_OPTS="--time=1:30:00 --mem=32G $COMMON_OPTS"
+STEP3_OPTS="--time=1:30:00 --mem=32G --nodes=1 --ntasks=32 $COMMON_OPTS"
 
 # Submit job 1 - pass all directories as arguments
 job1=$(sbatch $STEP1_OPTS --output=${LOG_DIR}/combine_hdf5_%j.out --error=${LOG_DIR}/combine_hdf5_%j.err ./combine_hdf5.sh "${INFILE_DIRS[@]}" "$OUT_NAME" "$OUTFILE_DIR" | awk '{print $4}')
@@ -73,6 +73,4 @@ job3=$(sbatch $STEP3_OPTS --dependency=afterok:$job2 --output=${LOG_DIR}/process
 
 # Submit job 4, dependent on step 3
 job4=$(sbatch $STEP3_OPTS --dependency=afterok:$job3 --output=${LOG_DIR}/merge_%j.out --error=${LOG_DIR}/merge_%j.err ./merge.sh "$OUTFILE_DIR" "$OUT_NAME" | awk '{print $4}')
-
-# job4=$(sbatch $STEP3_OPTS --output=${LOG_DIR}/merge_%j.out --error=${LOG_DIR}/merge_%j.err ./merge.sh "$OUTFILE_DIR" "$OUT_NAME" | awk '{print $4}')
 

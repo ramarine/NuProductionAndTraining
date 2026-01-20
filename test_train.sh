@@ -1,6 +1,6 @@
 #! /bin/bash
 
-#SBATCH --time=6-00:00:00
+#SBATCH --time=1:30:00
 #SBATCH --account=def-nilic
 #SBATCH --mail-user=william.dallaway@mail.utoronto.ca
 #SBATCH --mail-type=ALL
@@ -26,4 +26,6 @@ export APPTAINERENV_NUGRAPH_LOG=""
 export APPTAINERENV_REQUESTS_CA_BUNDLE="/opt/numl/lib/python3.10/site-packages/certifi/cacert.pem"
 
 #### RMA: CHANGE PATHS AS REQUIRED, KEEP OFFLINE FLAG UNTIL WANDB IS SETUP  
-singularity  exec --bind /project/6079563 --bind /scratch/${USERNAME} --nv ${PATH_TO_IMAGE_FILE}/numl_h100.sif python ${PATH_TO_NUGRAPH}/scripts/train.py --name $1 --version $2 --data-path $3 --batch-size 64 --event --semantic --epochs $4 --device 0 --in-feats 8 --offline 
+# singularity exec --bind /project/6079563 --bind /scratch/${USERNAME} --nv ${PATH_TO_IMAGE_FILE}/numl_h100.sif python ${PATH_TO_NUGRAPH}/scripts/train.py --name $1 --version $2 --data-path $3 --batch-size 64 --event --semantic --epochs $4 --device 0 --in-feats 8 --offline 
+apptainer exec --bind /project/6079563 --bind /scratch/${USERNAME} --nv ${PATH_TO_IMAGE_FILE}/numl_h100.sif python ${PATH_TO_NUGRAPH}/scripts/train.py --name $1 --version $2 --data-path $3 --batch-size 64 --event --semantic --epochs $4 --device 0 --in-feats 8 --offline 
+
