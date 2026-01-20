@@ -33,6 +33,9 @@ The following script will run atmospheric neutrino event generation for charged 
 ---
 
 ## B. NuGraph pre-processing: Adapt your h5 file until they are ready to be trained
+All the steps below can be run through one script that combines them all.
+
+Run example (type --help for more infor): `./run_conc_add_proc.sh -i /scratch/amarinei/data/Atmospherics/eCC_4_50/hdf5_reco1 -i /scratch/amarinei/data/Atmospherics/muCC_4_50/hdf5_reco1 -i /scratch/amarinei/data/Atmospherics/tauCC_4_50/hdf5_reco1 -i /scratch/amarinei/data/Atmospherics/eNC_4_50/hdf5_reco1 -n concatenated -o /scratch/amarinei/data/Atmospherics/e_mu_tau_CC_eNC_output`
 
 ### 1. Concatenate HDF5 Files
 
