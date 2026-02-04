@@ -54,9 +54,10 @@ mkdir -p "$OUTFILE_DIR"
 LOG_DIR="${OUTFILE_DIR}/logs_train"
 mkdir -p "$LOG_DIR"
 
-# Common SLURM options
+
 COMMON_OPTS="--account=def-nilic"
-TRAIN_OPTS="--time=1:30:00 --mem=32G --gpus=nvidia_h100_80gb_hbm3_1g.10gb:1 $COMMON_OPTS"
+# TRAIN_OPTS="--time=1:30:00 --mem=64G $COMMON_OPTS"
+TRAIN_OPTS="--time=1:30:00 --mem=12G --gpus=nvidia_h100_80gb_hbm3_3g.40gb:1 $COMMON_OPTS"
 
 # Submit training job
 job_id=$(sbatch $TRAIN_OPTS --output=${LOG_DIR}/train_%j.out --error=${LOG_DIR}/train_%j.err ./test_train.sh "$OUTPUT_NAME" "$VERSION" "$INFILE_DIR" "$INPUT_NAME" "$EPOCHS" "$LOG_DIR" | awk '{print $4}')

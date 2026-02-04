@@ -26,7 +26,11 @@ export APPTAINERENV_PYTHONPATH=/project/6071458/neutrino_ml/nugraph/nugraph:/pro
 export APPTAINERENV_NUGRAPH_DIR=/project/6071458/neutrino_ml/nugraph
 export APPTAINERENV_NUGRAPH_DATA=${INFILE_DIR}
 export APPTAINERENV_NUGRAPH_LOG=${LOG_DIR}
-export APPTAINERENV_REQUESTS_CA_BUNDLE="/opt/numl/lib/python3.10/site-packages/certifi/cacert.pem"
+export APPTAINERENV_REQUESTS_CA_BUNDLE=/opt/numl/lib/python3.10/site-packages/certifi/cacert.pem
 
 # Run training
-apptainer exec --bind /project/6079563 --bind /project/6071458 --bind /scratch/${USERNAME} --nv ${PATH_TO_IMAGE_FILE}/numl_h100.sif python ${PATH_TO_NUGRAPH}/scripts/train.py --name ${OUTPUT_NAME} --version ${VERSION} --data-path ${INFILE_DIR}/${INPUT_NAME} --batch-size 64 --event --semantic --epochs ${EPOCHS} --device 0 --in-feats 8 --offline
+echo "python ${PATH_TO_NUGRAPH}/scripts/train.py --name ${OUTPUT_NAME} --version ${VERSION} --data-path ${INFILE_DIR}/${INPUT_NAME} --batch-size 64 --event --semantic --epochs ${EPOCHS} --device 0 --in-feats 8"
+apptainer exec --bind /etc/pki/tls/certs/ --bind /project/6079563 --bind /project/6071458 --bind /scratch/${USERNAME} --nv ${PATH_TO_IMAGE_FILE}/numl_h100.sif python ${PATH_TO_NUGRAPH}/scripts/train.py --name ${OUTPUT_NAME} --version ${VERSION} --data-path ${INFILE_DIR}/${INPUT_NAME} --batch-size 64 --event --semantic --epochs ${EPOCHS} --device 0 --in-feats 8
+# apptainer exec --bind /etc/pki/tls/certs/ --bind /project/6079563 --bind /project/6071458 --bind /scratch/${USERNAME} --nv ${PATH_TO_IMAGE_FILE}/numl_h100.sif printenv | grep "SSL"
+
+

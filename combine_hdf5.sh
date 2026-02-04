@@ -67,6 +67,8 @@ for INFILE_DIR in "${INFILE_DIRS[@]}"; do
   BIND_ARGS="${BIND_ARGS} --bind ${INFILE_DIR}:/numl_data_$(basename ${INFILE_DIR})"
 done
 
+[ -f "${OUTFILE_DIR}/${OUT_NAME}.gnn.h5" ] && rm "${OUTFILE_DIR}/${OUT_NAME}.gnn.h5"
+
 echo "singularity exec --cleanenv ${BIND_ARGS} --bind ${OUTFILE_DIR}:/numl_output --bind /project/6079563 --bind /scratch/${USERNAME} --nv ${PATH_TO_NUML} mpiexec -n 32 ph5_concat -i ${CONCAT_LIST} -o ${OUTFILE_DIR}/${OUT_NAME}.gnn.h5"
 singularity exec --cleanenv ${BIND_ARGS} --bind ${OUTFILE_DIR}:/numl_output --bind /project/6079563 --bind /scratch/${USERNAME} --nv ${PATH_TO_NUML} mpiexec -n 32 ph5_concat -i ${CONCAT_LIST} -o ${OUTFILE_DIR}/${OUT_NAME}.gnn.h5
 

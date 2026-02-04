@@ -52,15 +52,15 @@ LOG_DIR="${OUTFILE_DIR}/logs_proc"
 mkdir -p "$LOG_DIR"
 
 # Common SLURM options
-COMMON_OPTS="--account=def-nilic"
+COMMON_OPTS="--account=def-nilic --mail-type=FAIL --mail-user=robert.mihai.amarinei@cern.ch"
 
 # STEP1_OPTS="--time=0:30:00 --mem=12G --nodes=1 --ntasks=32 $COMMON_OPTS"
 # STEP2_OPTS="--time=1:30:00 --mem=12G $COMMON_OPTS"
 # STEP3_OPTS="--time=1:30:00 --mem=12G --nodes=1 --ntasks=32 $COMMON_OPTS"
 
-STEP1_OPTS="--time=1:30:00 --mem=32G --nodes=1 --ntasks=32 $COMMON_OPTS"
-STEP2_OPTS="--time=1:30:00 --mem=32G $COMMON_OPTS"
-STEP3_OPTS="--time=1:30:00 --mem=32G --nodes=1 --ntasks=32 $COMMON_OPTS"
+STEP1_OPTS="--time=12:30:00 --mem=84G --nodes=1 --ntasks=32 $COMMON_OPTS"
+STEP2_OPTS="--time=7:30:00 --mem=64G $COMMON_OPTS"
+STEP3_OPTS="--time=12:30:00 --mem=64G --nodes=1 --ntasks=32 $COMMON_OPTS"
 
 # Submit job 1 - pass all directories as arguments
 job1=$(sbatch $STEP1_OPTS --output=${LOG_DIR}/combine_hdf5_%j.out --error=${LOG_DIR}/combine_hdf5_%j.err ./combine_hdf5.sh "${INFILE_DIRS[@]}" "$OUT_NAME" "$OUTFILE_DIR" | awk '{print $4}')
